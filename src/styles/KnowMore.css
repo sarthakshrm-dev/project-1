@@ -1,0 +1,41 @@
+.grid-graph {
+    background-image: url('../images/grid-graph.png');
+    height: 372px;
+    width: 100%;
+    background-size: 1417.5px 372px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.graph-style-1 {
+    width: 1417.5px;
+    height: 372px;
+    position: absolute;
+    top: 60px;
+    background: linear-gradient(180deg, rgba(136, 255, 247, 0.2) 0%, rgba(136, 255, 247, 0) 100%);
+    mix-blend-mode: lighten;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph-style-2 {
+    width: 514px;
+    height: 387.5px;
+    background: linear-gradient(125.14deg, #1E1E1E 47.24%, rgba(136, 255, 247, 0) 152.86%);
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.graph-style-3 {
+    width: 517px;
+    height: 393px;
+    background: linear-gradient(125.66deg, #1E1E1E 47.77%, rgba(136, 255, 247, 0) 154.58%);
+    opacity: 0.9;
+    z-index: 1;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}

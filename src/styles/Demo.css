@@ -1,0 +1,42 @@
+.demo-request {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1035px;
+    height: 370px;
+    background: linear-gradient(97.01deg, rgba(124, 131, 253, 0.5) -100.65%, rgba(255, 255, 255, 0) 201.58%);
+    border: 4px solid rgba(124, 131, 253, 0.5);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 157px;
+    margin-bottom: 108px;
+}
+
+.demo-request h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: white;
+}
+
+.demo-request p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #C2C2C2;
+}
+
+.demo-request button {
+    background-color: #7C83FD;
+    width: 322px;
+    height: 77px;
+    margin-top: 59px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+}

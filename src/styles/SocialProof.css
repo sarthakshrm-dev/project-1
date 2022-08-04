@@ -1,0 +1,87 @@
+.reviews {
+    color: white;
+}
+
+.reviews h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: white;
+    text-align: center;
+    margin-bottom: 96px;
+    margin-top: 126px;
+}
+
+.reviews-row {
+    display: flex;
+    overflow: hidden;
+}
+
+.review-box {
+    width: 486px;
+    height: 233px;
+    background: linear-gradient(105.64deg, #7C83FD -25.82%, rgba(150, 186, 255, 0.421875) 80.89%, rgba(150, 186, 255, 0) 125.59%);
+    border-radius: 20px;
+    position: relative;
+    margin-right: 30px;
+    margin-left: 30px
+}
+
+.text {
+    width: 382px;
+    height: 116px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    position: absolute;
+    top: 23px;
+    left: 34px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    position: absolute;
+    bottom: 48px;
+    left: 34px;
+}
+
+.occupation {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 24px;
+    left: 34px;
+}
+
+.socialproof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 94px;
+}
+
+#google {
+    width: 188px;
+    height: 63px;
+    margin-right: 84px;
+}
+
+#airbnb {
+    width: 222px;
+    height: 72px;
+    margin-right: 80px;  
+}
+
+#swiggy {
+    width: 198px;
+    height: 57px;
+    margin-right: 126px;
+}
+
+#nike {
+    width: 106px;
+    height: 42px;
+}
