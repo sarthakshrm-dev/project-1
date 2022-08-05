@@ -1,0 +1,70 @@
+.banner {
+    background-image: url('../images/video-backdrop.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 50%;
+    padding-top: 57px;
+    padding-left: 63px;
+    height: 386px;
+    margin-bottom: 187px;
+    display: flex;
+}
+
+.banner-content button {
+    width: 227px;
+    height: 62px;
+    background: #7C83FD;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.banner-content p {
+    max-width: 623px;
+    max-height: 145px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #686868;
+    margin-bottom: 41px;
+}
+
+.banner-content h1 {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.play-btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    right: 291px;
+    align-self: center;
+}
+
+.play-btn-back {
+    width: 100px;
+    height: 100px;
+    background: #7C83FD;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.play-btn img {
+    width: 39px;
+    height: 46px;
+    position: absolute;
+    top: 27px; 
+    right: 27px;
+    bottom: 34px;
+    left: 34px;
+    z-index: 2;
+}
