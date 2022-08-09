@@ -12,47 +12,14 @@
 }
 
 .reviews-row {
+    width: 100%;
     display: flex;
-    overflow: hidden;
+    overflow: scroll;
+    padding: 0px 39px 0px 99px;
 }
 
-.review-box {
-    width: 486px;
-    height: 233px;
-    background: linear-gradient(105.64deg, #7C83FD -25.82%, rgba(150, 186, 255, 0.421875) 80.89%, rgba(150, 186, 255, 0) 125.59%);
-    border-radius: 20px;
-    position: relative;
-    margin-right: 30px;
-    margin-left: 30px
-}
-
-.text {
-    width: 382px;
-    height: 116px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    position: absolute;
-    top: 23px;
-    left: 34px;
-}
-
-.name {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    position: absolute;
-    bottom: 48px;
-    left: 34px;
-}
-
-.occupation {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    position: absolute;
-    bottom: 24px;
-    left: 34px;
+.reviews-row::-webkit-scrollbar {
+    display: none;
 }
 
 .socialproof {

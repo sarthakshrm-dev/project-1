@@ -14,6 +14,7 @@ function App() {
             <Header />
             <Banner />
             <Features />
+            <KnowMore />
             <SocialProof />
             <Demo />
             <Footer />

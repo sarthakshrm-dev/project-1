@@ -1,27 +1,18 @@
 import React from "react";
+import ReviewBox from "./ReviewBox";
 import "../styles/SocialProof.css"
 
 function SocialProof() {
+
     return(
         <>
             <div className="reviews">
                 <h2>Listen to what our customer has to say</h2>
-                <div className="reviews-row">
-                    <div className="review-box">
-                        <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam quos exercitationem assumenda nihil voluptas magni minima est. Tenetur?</p>
-                        <p className="name">Sanjay Mishra</p>
-                        <p className="occupation">CEO, Famous Company</p>
-                    </div>
-                    <div className="review-box">
-                        <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam quos exercitationem assumenda nihil voluptas magni minima est. Tenetur?</p>
-                        <p className="name">Sanjay Mishra</p>
-                        <p className="occupation">CEO, Famous Company</p>
-                    </div>
-                    <div className="review-box">
-                        <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam quos exercitationem assumenda nihil voluptas magni minima est. Tenetur?</p>
-                        <p className="name">Sanjay Mishra</p>
-                        <p className="occupation">CEO, Famous Company</p>
-                    </div>
+                <div className="reviews-row" >
+                    <ReviewBox />
+                    <ReviewBox />
+                    <ReviewBox />
+                    <ReviewBox />
                 </div>
             </div>
             <div className="socialproof">

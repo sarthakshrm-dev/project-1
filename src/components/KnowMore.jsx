@@ -3,19 +3,22 @@ import "../styles/KnowMore.css"
 
 function KnowMore() {
     return(
-        <div>
-            <h2></h2>
-            <h3></h3>
-            <p></p>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
+        <div className="knowmore-section">
+            <div className="knowmore-content-container">
+                <h2>Our Solutions</h2>
+                <div className="knowmore-content">
+                    <h3>Urbanization Tracking and Prediction</h3>
+                    <p>with all the beneifits listed</p>
+                    <ul>
+                        <li>Sattelite Imagery</li>
+                        <li>Radar Imagery</li>
+                    </ul>
+                <a href="">Explore</a>
+                <div className="pointing-dots"></div>
+            </div>
+            </div>
             <div className="grid-graph">
-                <div className="graph-style-1">
-                    <div className="graph-style-2"></div>
-                    <div className="graph-style-3"></div>
-                </div>
+                <div className="graph-style"></div>
             </div>
         </div>
     )

@@ -1,0 +1,37 @@
+.review-box {
+    min-width: 486px;
+    min-height: 233px;
+    background: linear-gradient(105.64deg, #7C83FD -25.82%, rgba(150, 186, 255, 0.421875) 80.89%, rgba(150, 186, 255, 0) 125.59%);
+    border-radius: 20px;
+    position: relative;
+    margin-right: 60px;
+}
+
+.text {
+    width: 382px;
+    height: 116px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    position: absolute;
+    top: 23px;
+    left: 34px;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    position: absolute;
+    bottom: 48px;
+    left: 34px;
+}
+
+.occupation {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 24px;
+    left: 34px;
+}

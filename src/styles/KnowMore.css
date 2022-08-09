@@ -1,3 +1,62 @@
+.knowmore-content-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.knowmore-content-container h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 71px;
+}
+
+.knowmore-content {
+    margin-bottom: 133px;
+    position: relative;
+}
+
+.knowmore-content h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.knowmore-content p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #686868;
+    margin-bottom: 12px;
+}
+
+.knowmore-content a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #7C83FD;
+    text-decoration: none;
+}
+
+.knowmore-content ul {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 26px;
+    margin-left: 17px;
+}
+
+.pointing-dots {
+    width: 59px;
+    height: 454px;
+    border-top: 4px dashed #7C83FD;
+    border-left: 4px dashed #7C83FD;
+    position: absolute;
+    top: 24px;
+    left: -76px;
+}
+
 .grid-graph {
     background-image: url('../images/grid-graph.png');
     height: 372px;
@@ -9,9 +68,10 @@
     margin: auto;
     display: flex;
     justify-content: center;
+    margin-bottom: 172px;
 }
 
-.graph-style-1 {
+.graph-style {
     width: 1417.5px;
     height: 372px;
     position: absolute;
@@ -23,19 +83,22 @@
     justify-content: space-between;
 }
 
-.graph-style-2 {
+.graph-style::before {
+    content: "";
     width: 514px;
     height: 387.5px;
-    background: linear-gradient(125.14deg, #1E1E1E 47.24%, rgba(136, 255, 247, 0) 152.86%);
+    background: linear-gradient(125.14deg, #1E1E1E 100%, #88FFF7 0%);
     opacity: 0.9;
+    mix-blend-mode: darken;
     z-index: 1;
 }
 
-.graph-style-3 {
+.graph-style::after {
+    content: "";
     width: 517px;
     height: 393px;
-    background: linear-gradient(125.66deg, #1E1E1E 47.77%, rgba(136, 255, 247, 0) 154.58%);
+    background: linear-gradient(125.66deg, #1E1E1E 100%, #88FFF7 0%);
     opacity: 0.9;
     z-index: 1;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    mix-blend-mode: darken;
 }
