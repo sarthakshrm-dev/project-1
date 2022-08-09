@@ -19,6 +19,14 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.banner-content button:hover {
+    background: #5a62f9;
+    width: 229px;
+    height: 64px;
 }
 
 .banner-content p {
@@ -46,11 +54,18 @@
     position: absolute;
     right: 291px;
     align-self: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.play-btn:hover {
+    height: 101px;
+    width: 101px;
 }
 
 .play-btn-back {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     background: #7C83FD;
     mix-blend-mode: normal;
     opacity: 0.4;
@@ -59,8 +74,8 @@
 }
 
 .play-btn img {
-    width: 39px;
-    height: 46px;
+    width: 39%;
+    height: 46%;
     position: absolute;
     top: 27px; 
     right: 27px;

@@ -43,6 +43,8 @@
     color: #A1A1A1;
     margin-top: 47px;
     margin-right: 98px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .feature2 {
@@ -51,6 +53,8 @@
     color: #A1A1A1;
     margin-top: 47px;
     margin-right: 98px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .feature3 {
@@ -59,6 +63,8 @@
     color: #A1A1A1;
     margin-top: 47px;
     margin-right: 98px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .feature1:hover{
@@ -68,8 +74,8 @@
     background: linear-gradient(90.42deg, #686868 -26.57%, rgba(104, 104, 104, 0) 94.13%);
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
-    margin-top: 41px;
-    margin-right: 50px;
+    margin-top: 25px;
+    margin-right: 42px;
     color: white;
 }
 
@@ -80,7 +86,7 @@
     background: linear-gradient(90.42deg, #686868 -26.57%, rgba(104, 104, 104, 0) 94.13%);
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
-    margin-top: 41px;
+    margin-top: 25px;
     margin-right: 50px;
     color: white;
 }
@@ -92,7 +98,7 @@
     background: linear-gradient(90.42deg, #686868 -26.57%, rgba(104, 104, 104, 0) 94.13%);
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
-    margin-top: 41px;
+    margin-top: 25px;
     margin-right: 50px;
     color: white;
 }
@@ -105,11 +111,11 @@
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
     margin-top: 25px;
-    margin-right: 50px;
+    margin-right: 42px;
     color: white;
 }
 
-.feature:hover .feature-icon {
+.feature1:hover .feature-icon {
     border-radius: 50%;
     width: 52px;
     height: 52px;
@@ -119,7 +125,27 @@
 
 }
 
-.feature-icon-active {
+.feature2:hover .feature-icon {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    background-color: #7C83FD;
+    opacity: 0.7;
+    margin-right: 25px;
+
+}
+
+.feature3:hover .feature-icon {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    background-color: #7C83FD;
+    opacity: 0.7;
+    margin-right: 25px;
+
+}
+
+.feature-active > .feature-icon {
     border-radius: 50%;
     width: 52px;
     height: 52px;

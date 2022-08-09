@@ -39,4 +39,9 @@ footer img {
     color: #686868;
     text-decoration: none;
     margin-bottom: 19px;
+    transition: 0.2s;
+}
+
+.footer-links a:hover {
+    color: #aaa9a9;
 }

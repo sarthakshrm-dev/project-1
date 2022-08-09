@@ -29,6 +29,14 @@ header img {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.header-links button:hover {
+    background: #5a62f9;
+    width: 144px;
+    height: 53px;
 }
 
 .header-links a {
@@ -38,4 +46,9 @@ header img {
     font-weight: 500;
     font-size: 22px;
     line-height: 27px;
+    transition: 0.2s;
+}
+
+.header-links a:hover {
+    color: rgb(220, 220, 220);
 }

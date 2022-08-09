@@ -3,7 +3,7 @@ import "../styles/Features.css"
 
 function Features() {
 
-    const [feature1, setFeature1] = useState(false)
+    const [feature1, setFeature1] = useState(true)
     const [feature2, setFeature2] = useState(false)
     const [feature3, setFeature3] = useState(false)
 

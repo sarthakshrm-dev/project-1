@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollContainer from 'react-indiana-drag-scroll'
 import ReviewBox from "./ReviewBox";
 import "../styles/SocialProof.css"
 
@@ -8,12 +9,12 @@ function SocialProof() {
         <>
             <div className="reviews">
                 <h2>Listen to what our customer has to say</h2>
-                <div className="reviews-row" >
+                <ScrollContainer className="reviews-row" >
                     <ReviewBox />
                     <ReviewBox />
                     <ReviewBox />
                     <ReviewBox />
-                </div>
+                </ScrollContainer>
             </div>
             <div className="socialproof">
                 <img id="google" src={require('../images/google-logo.png')} alt="google" />
