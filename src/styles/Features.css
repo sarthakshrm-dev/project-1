@@ -37,6 +37,10 @@
     text-decoration: none;
 }
 
+.features-options a:hover {
+    color: #5a62f9;
+}
+
 .feature1 {
     display: flex;
     align-items: center;
@@ -44,6 +48,8 @@
     margin-top: 47px;
     margin-right: 98px;
     cursor: pointer;
+    padding: 0px;
+    background-color: transparent;
     transition: 0.2s;
 }
 
@@ -54,6 +60,8 @@
     margin-top: 47px;
     margin-right: 98px;
     cursor: pointer;
+    padding: 0px;
+    background-color: transparent;
     transition: 0.2s;
 }
 
@@ -64,6 +72,8 @@
     margin-top: 47px;
     margin-right: 98px;
     cursor: pointer;
+    padding: 0px;
+    background-color: transparent;
     transition: 0.2s;
 }
 
@@ -75,7 +85,7 @@
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
     margin-top: 25px;
-    margin-right: 42px;
+    margin-right: 51px;
     color: white;
 }
 

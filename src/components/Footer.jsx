@@ -21,7 +21,7 @@ function Footer() {
                 </div>
                 <div className="footer-links">
                     <h4>Data</h4>
-                    <a href="">Satellite Imagery</a>
+                    <a href="https://drfroth.wordpress.com">Satellite Imagery</a>
                     <a href="">RADAR Imagery</a>
                     <a href="">Mobility Data</a>
                     <a href="">Point of Interest</a>
