@@ -23,6 +23,8 @@
     font-size: 24px;
     line-height: 29px;
     color: white;
+    width: 355px;
+    margin-right: 59px;
 }
 
 .features-options a {
@@ -45,47 +47,42 @@
     display: flex;
     align-items: center;
     color: #A1A1A1;
-    margin-top: 47px;
-    margin-right: 98px;
+    margin-top: 34px;
     cursor: pointer;
-    padding: 0px;
-    background-color: transparent;
-    transition: 0.2s;
+    background: linear-gradient(90.42deg, rgba(104, 104, 104, 0) -26.57%, rgba(104, 104, 104, 0) 94.13%);
+    padding: 7px 38px 7px 10px;
+    transition: 0.3s;
 }
 
 .feature2 {
     display: flex;
     align-items: center;
     color: #A1A1A1;
-    margin-top: 47px;
-    margin-right: 98px;
+    margin-top: 34px;
     cursor: pointer;
-    padding: 0px;
-    background-color: transparent;
-    transition: 0.2s;
+    background: linear-gradient(90.42deg, rgba(104, 104, 104, 0) -26.57%, rgba(104, 104, 104, 0) 94.13%);
+    padding: 7px 38px 7px 10px;
+    transition: 0.3s;
 }
 
 .feature3 {
     display: flex;
     align-items: center;
     color: #A1A1A1;
-    margin-top: 47px;
-    margin-right: 98px;
+    margin-top: 25px;
     cursor: pointer;
-    padding: 0px;
-    background-color: transparent;
-    transition: 0.2s;
+    background: linear-gradient(90.42deg, rgba(104, 104, 104, 0) -26.57%, rgba(104, 104, 104, 0) 94.13%);
+    padding: 7px 38px 7px 10px;
+    transition: 0.3s;
 }
 
 .feature1:hover{
     width: fit-content;
     display: flex;
     align-items: center;
-    background: linear-gradient(90.42deg, #686868 -26.57%, rgba(104, 104, 104, 0) 94.13%);
+    background: linear-gradient(90.42deg, rgba(104, 104, 104, 1) -26.57%, rgba(104, 104, 104, 0) 94.13%);
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
-    margin-top: 25px;
-    margin-right: 51px;
     color: white;
 }
 
@@ -96,8 +93,6 @@
     background: linear-gradient(90.42deg, #686868 -26.57%, rgba(104, 104, 104, 0) 94.13%);
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
-    margin-top: 25px;
-    margin-right: 50px;
     color: white;
 }
 
@@ -108,8 +103,6 @@
     background: linear-gradient(90.42deg, #686868 -26.57%, rgba(104, 104, 104, 0) 94.13%);
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
-    margin-top: 25px;
-    margin-right: 50px;
     color: white;
 }
 
@@ -121,7 +114,6 @@
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
     margin-top: 25px;
-    margin-right: 42px;
     color: white;
 }
 
