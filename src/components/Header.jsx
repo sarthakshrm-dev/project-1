@@ -8,6 +8,8 @@ function Header() {
             <div className="header-links">
                 <a href="">Platforms</a>
                 <a href="">Solutions</a>
+                <a href="">Industry</a>
+                <a href="">Data</a>
                 <button>Get a Demo</button>
             </div>
         </header>
