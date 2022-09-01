@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
 import ReviewBox from "./ReviewBox";
 import "../styles/SocialProof.css";
 
 function SocialProof() {
+
+  function handleDown(e) {
+    e.target.style.cursor='grabbing'
+  }
+
+  function handleUp(e) {
+    e.target.style.cursor='grab'
+  }
+
   return (
     <>
       <div className="reviews">
         <h2>Listen to what our customer has to say</h2>
-        <ScrollContainer className="reviews-row">
-          <ReviewBox />
-          <ReviewBox />
-          <ReviewBox />
-          <ReviewBox />
-        </ScrollContainer>
+        <div onMouseDown={handleDown} onMouseUp={handleUp} className="reviews-container">
+          <ScrollContainer onMouseDown={handleDown} className="reviews-row">
+            <ReviewBox />
+            <ReviewBox />
+            <ReviewBox />
+            <ReviewBox />
+          </ScrollContainer>
+        </div>
       </div>
       <div className="socialproof">
         <svg
