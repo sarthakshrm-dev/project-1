@@ -18,14 +18,13 @@ function Industry() {
                 <Swiper
                     spaceBetween={-400}
                     slidesPerView={2}
-                    initialSlide={3}
                     centeredSlides={true}
                     loop={true}
                     pagination={{
                         clickable: true
                     }}
                     speed={400}
-                    autoplay={{ delay: 4000, disableOnHover: true }}
+                    autoplay={{ delay: 3000 }}
                     className='slider'>
                         {cards.map((data, index) => (
                             <SwiperSlide className='swiper-slide' key={index} />

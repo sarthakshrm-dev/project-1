@@ -16,6 +16,9 @@
 .features-menu {
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
 }
 
 .features-options {
@@ -23,12 +26,12 @@
     font-size: 24px;
     line-height: 29px;
     color: white;
-    width: 355px;
-    margin-right: 62px;
+    width: 365px;
+    margin-right: 60px;
 }
 
 .features-options a {
-    display: block;
+    display: inline-block;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -37,6 +40,7 @@
     margin-top: 43px;
     margin-bottom: 47px;
     text-decoration: none;
+    transition: 0.2s;
 }
 
 .features-options a:hover {
@@ -51,8 +55,10 @@
     margin-top: 25px;
     cursor: pointer;
     background: linear-gradient(90.42deg, rgba(104, 104, 104, 0) -26.57%, rgba(104, 104, 104, 0) 94.13%);
-    padding: 7px 38px 7px 10px;
-    transition: 0.4s;
+    padding: 11px 38px 11px 14px;
+    border-radius: 100px;
+    transition: 0.3s;
+    margin-left: 0px;
 }
 
 .feature2 {
@@ -63,8 +69,10 @@
     margin-top: 25px;
     cursor: pointer;
     background: linear-gradient(90.42deg, rgba(104, 104, 104, 0) -26.57%, rgba(104, 104, 104, 0) 94.13%);
-    padding: 7px 38px 7px 10px;
-    transition: 0.4s;
+    padding: 11px 38px 11px 14px;
+    border-radius: 100px;
+    transition: 0.3s;
+    margin-left: 0px;
 }
 
 .feature3 {
@@ -75,8 +83,10 @@
     margin-top: 25px;
     cursor: pointer;
     background: linear-gradient(90.42deg, rgba(104, 104, 104, 0) -26.57%, rgba(104, 104, 104, 0) 94.13%);
-    padding: 7px 38px 7px 10px;
-    transition: 0.4s;
+    padding: 11px 38px 11px 14px;
+    border-radius: 100px;
+    transition: 0.3s;
+    margin-left: 0px;
 }
 
 .feature4 {
@@ -87,8 +97,10 @@
     margin-top: 25px;
     cursor: pointer;
     background: linear-gradient(90.42deg, rgba(104, 104, 104, 0) -26.57%, rgba(104, 104, 104, 0) 94.13%);
-    padding: 7px 38px 7px 10px;
-    transition: 0.4s;
+    padding: 11px 38px 11px 14px;
+    border-radius: 100px;
+    transition: 0.3s;
+    margin-left: 0px;
 }
 
 .feature1:hover{
@@ -99,6 +111,7 @@
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
     color: white;
+    margin-left: 5px;
 }
 
 .feature2:hover{
@@ -109,6 +122,7 @@
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
     color: white;
+    margin-left: 5px;
 }
 
 .feature3:hover{
@@ -119,6 +133,7 @@
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
     color: white;
+    margin-left: 5px;
 }
 
 .feature4:hover{
@@ -129,6 +144,7 @@
     border-radius: 100px;
     padding: 15px 38px 15px 18px;
     color: white;
+    margin-left: 5px;
 }
 
 .feature-active{
@@ -140,6 +156,7 @@
     padding: 15px 38px 15px 18px;
     margin-top: 25px;
     color: white;
+    margin-left: 5px;
 }
 
 .feature1:hover .feature-icon {
@@ -198,6 +215,7 @@
     background-color: #686868;
     opacity: 0.7;
     margin-right: 25px;
+    transition: 0.3s;
 }
 
 .site-mockup {
