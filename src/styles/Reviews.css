@@ -1,0 +1,25 @@
+.reviews {
+    color: white;
+}
+
+.reviews h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0px;
+    color: white;
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.reviews-row {
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    padding: 0px 56px 0px 86px;
+    cursor: grab;
+}
+
+.reviews-row::-webkit-scrollbar {
+    display: none;
+}

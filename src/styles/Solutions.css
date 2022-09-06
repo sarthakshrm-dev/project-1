@@ -1,0 +1,148 @@
+.solutions-section {
+     margin-bottom: 211px;
+}
+
+.solutions-heading {
+    font-size: 36px;
+    font-weight: 500;   
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin-bottom: 52px;
+}
+
+.solutions-content-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.solutions-content {
+    margin-right: 126px;
+}
+
+.solutions-content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: white;
+    margin-bottom: 9px; 
+}
+
+.solutions-content h3 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: white;
+    margin-bottom: 58px;
+}
+
+.solutions-content li {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    color: #B897E6;
+    max-width: 396px;
+}
+
+.solutions-content li:first-child {
+    margin-bottom: 51px;
+}
+
+.solutions-map {
+    width: 570px;
+    height: 428px;
+    position: relative;
+}
+
+.solutions-map img {
+    height: 100%;
+    width: 100%;
+}
+
+.solutions-map-data {
+    width: 160px;
+    height: 72px;
+    background: #1B1924;
+    border-radius: 6px;
+    position: absolute;
+    top: 22px;
+    left: 23px;
+    padding-left: 11px;
+}
+
+.solutions-map-data h4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: white;
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+
+.solutions-map-data p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    color: #B897E6;
+    margin-bottom: 7px;
+}
+
+.solutions-dots {
+    height: 54px;
+    border-left: 2px dashed #B897E6;
+    position: absolute;
+    bottom: -54px;
+    left: 79px;
+}
+
+.solutions-map-menu {
+    width: 206px;
+    height: 236px;
+    filter: drop-shadow(0px 2px 4px rgba(184, 151, 230, 0.22));
+    border-radius: 10px;
+    background: #1B1924;
+    position: absolute;
+    left: 23px;
+    bottom: -51px;
+    color: white;
+}
+
+.solutions-map-menu h4 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: white;
+    margin-left: 18px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.solutions-buttons {
+    font-size: 11px;
+    font-weight: 100;
+    line-height: 10px;
+    letter-spacing: 0em;
+    padding-left: 18px;
+    color: #9B9A9F;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.solutions-buttons:hover {
+    color: #B897E6;
+    background: linear-gradient(to right, #413853, #1B1924);
+}
+
+.solutions-active {
+    color: #B897E6;
+    background: linear-gradient(to right, #413853, #1B1924);
+}

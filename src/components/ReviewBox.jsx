@@ -4,9 +4,9 @@ import "../styles/ReviewBox.css"
 function ReviewBox() {
     return(
         <div className="review-box">
-            <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam quos exercitationem assumenda nihil voluptas magni minima est. Tenetur?</p>
-            <p className="name">Sanjay Mishra</p>
-            <p className="occupation">CEO, Famous Company</p>
+            <p className="summary">“The best Website”</p>
+            <p className="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident</p>
+            <p className="name">Sophia Moore</p>
         </div>
     )
 }

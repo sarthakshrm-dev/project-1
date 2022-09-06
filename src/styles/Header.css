@@ -23,7 +23,7 @@ header img {
     width: 143px;
     height: 52px;
     color: white;
-    background-color: #7C83FD;
+    background: rgba(184, 151, 230, 1);
     border: none;
     border-radius: 6px;
     font-weight: 500;
@@ -40,7 +40,7 @@ header img {
 .header-links a {
     text-decoration: none;
     color: white;
-    margin-right: 60px;
+    margin-right: 66px;
     font-weight: 500;
     font-size: 22px;
     line-height: 27px;

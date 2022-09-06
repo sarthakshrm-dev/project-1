@@ -13,6 +13,7 @@ function Banner() {
                 <div className="play-btn-back"></div>
                 <img src={require('../images/Play.png')} alt="play" />
             </div>
+            <div className="background-image"></div>
         </div>
     )
 }

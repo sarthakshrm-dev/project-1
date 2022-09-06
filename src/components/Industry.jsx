@@ -7,27 +7,45 @@ import '../styles/Industry.css'
 
 function Industry() {
     
-    const [cards] = useState(['https://sitezeus.com/images/home/hero-slider/sitezeus_website_hompage_redesign_carousel-content_CSv2_solutions-suite.jpg', 'https://sitezeus.com/images/home/hero-slider/sitezeus_website_hompage_redesign_carousel-content_CSv2_grow-smart.jpg', 'https://1763074.fs1.hubspotusercontent-na1.net/hubfs/1763074/Hosted%20video/sitezeus_website_homepage_carousel-video-loop.mp4', 'https://sitezeus.com/images/home/hero-slider/sitezeus_website_hompage_redesign_carousel-content_CSv2_sales-impact.jpg', 'https://sitezeus.com/images/home/hero-slider/sitezeus_website_hompage_redesign_carousel-content_CSv2_olympus-data.jpg','https://sitezeus.com/images/home/hero-slider/sitezeus_website_hompage_redesign_carousel-content_CSv2_olympus-data.jpg'])
+    const [cards] = useState([
+        {
+            title: 'Customer Segmentation',
+            image: '../images/slider-customer-segmentation.png'
+        },
+        {
+            title: 'Footfall',
+            image: '../images/slider-customer-segmentation.png'
+        },
+        {
+            title: 'Behaviour',
+            image: '../images/slider-customer-segmentation.png'
+        }
+    ])
     SwiperCore.use([Autoplay])
-    SwiperCore.use([Pagination])
 
     return (
         <section className='industry-section'>
-            <h2>Industry</h2>
+            <h2 className='industry-heading'>Data plugs helping your business</h2>
             <div className="carousel">
                 <Swiper
-                    spaceBetween={-400}
-                    slidesPerView={2}
+                    spaceBetween={68}
+                    slidesPerView='auto'
                     centeredSlides={true}
                     loop={true}
-                    pagination={{
-                        clickable: true
-                    }}
                     speed={400}
                     autoplay={{ delay: 3000 }}
                     className='slider'>
                         {cards.map((data, index) => (
-                            <SwiperSlide className='swiper-slide' key={index} />
+                            <SwiperSlide className='swiper-slide' key={index}>
+                                <div className="slider-content">
+                                    <div className='slider-image'></div>
+                                    <h2 className='slider-heading'>{data.title}</h2>
+                                    <p className='slider-text'>Lorem ipsum dolor sit amet, consectetur adip scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p className='slider-link'>
+                                        <a href="">Explore our live product</a>
+                                    </p>
+                                </div>
+                            </SwiperSlide>
                         ))}
                 </Swiper>
             </div>

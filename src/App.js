@@ -3,10 +3,10 @@ import "./styles/App.css"
 import Header from "./components/Header"
 import Banner from "./components/Banner";
 import Features from "./components/Features"
-import KnowMore from "./components/KnowMore"
+import Solutions from "./components/Solutions"
+import ClientList from "./components/ClientList";
 import Industry from "./components/Industry";
-import SocialProof from "./components/SocialProof"
-import Demo from "./components/Demo";
+import Reviews from "./components/Reviews"
 import Footer from "./components/Footer";
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
             <Header />
             <Banner />
             <Features />
-            <KnowMore />
+            <Solutions />
+            <ClientList />
             <Industry />
-            <SocialProof />
-            <Demo />
+            <Reviews />
             <Footer />
         </>
     )
