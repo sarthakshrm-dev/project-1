@@ -4,10 +4,10 @@ import Header from "./components/Header"
 import Banner from "./components/Banner";
 import Features from "./components/Features"
 import Solutions from "./components/Solutions"
-import ClientList from "./components/ClientList";
 import Industry from "./components/Industry";
 import Reviews from "./components/Reviews"
 import Footer from "./components/Footer";
+import ChatBot from "./components/ChatBot";
 
 function App() {
     return(
@@ -16,10 +16,10 @@ function App() {
             <Banner />
             <Features />
             <Solutions />
-            <ClientList />
             <Industry />
             <Reviews />
             <Footer />
+            <ChatBot />
         </>
     )
 }

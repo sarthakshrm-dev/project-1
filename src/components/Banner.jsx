@@ -1,19 +1,16 @@
 import React from "react";
+import ClientList from './ClientList'
 import "../styles/Banner.css"
 
 function Banner() {
     return(
         <div className="banner">
             <div className="banner-content">
-                <h1>Pick Better Location!</h1>
-                <p>Soiometrik is an automate location intelligence platform designed to boose the confidence multi-unit brands need when growing and optimizing across markets. Start making data driven decisions in real time with extreme precision.</p>
+                <h1>Data automation software for modern ops teams</h1>
+                <p>Sociometrik is an automated location intelligence platform designed to boost the confidence multi-unit brands need when growing and optimizing across markets. Start making data-driven decisions in real-time with extreme precision.</p>
                 <button>See Sociometrik Live</button>
+                <ClientList />
             </div>
-            <div className="play-btn">
-                <div className="play-btn-back"></div>
-                <img src={require('../images/Play.png')} alt="play" />
-            </div>
-            <div className="background-image"></div>
         </div>
     )
 }

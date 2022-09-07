@@ -28,7 +28,7 @@ function Industry() {
             <h2 className='industry-heading'>Data plugs helping your business</h2>
             <div className="carousel">
                 <Swiper
-                    spaceBetween={68}
+                    spaceBetween={47}
                     slidesPerView='auto'
                     centeredSlides={true}
                     loop={true}

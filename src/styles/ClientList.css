@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 130px;
 }
 
 .client-heading {
@@ -15,61 +14,22 @@
     color: white;
 }
 
-#google {
-    width: 188px;
-    height: 63px;
-    margin-right: 48px;
+.client-list {
+    margin-left: 90px;
+}
+
+.google {
+    width: 100px;
+    height: auto;
+    margin-right: 90px;
     cursor: pointer;
 }
 
-#google path {
+.google path {
     transition: 0.2s;
+    fill: #2F2F2F;
 }
 
-#google:hover path {
-    fill: rgb(114, 114, 114);
-}
-
-#airbnb {
-    width: 222px;
-    height: 72px;
-    margin-right: 48px; 
-    cursor: pointer; 
-}
-
-#airbnb path {
-    transition: 0.2s;
-}
-
-#airbnb:hover path {
-    fill: rgb(114, 114, 114);
-}
-
-#swiggy {
-    width: 198px;
-    height: 57px;
-    margin-right: 48px;
-    cursor: pointer;
-}
-
-#swiggy path {
-    transition: 0.2s;
-}
-
-#swiggy:hover path {
-    fill: rgb(114, 114, 114);
-}
-
-#nike {
-    width: 106px;
-    height: 42px;
-    cursor: pointer;
-}
-
-#nike path {
-    transition: 0.2s;
-}
-
-#nike:hover path {
-    fill: rgb(114, 114, 114);
+.google:hover path {
+    fill: white;
 }

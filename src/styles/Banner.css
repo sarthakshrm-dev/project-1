@@ -1,33 +1,26 @@
 .banner {
-    padding-top: 57px;
-    padding-left: 63px;
-    height: 386px;
-    margin-bottom: 177px;
-    display: flex;
+    padding-top: 111px;
+    margin-bottom: 139.19px;
 }
 
-.background-image {
-    background-image: url('../images/video-backdrop.png');
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: 100%;
-    width: 843px;
-    height: 460px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+.banner-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .banner-content button {
-    width: 227px;
-    height: 62px;
-    background: rgba(184, 151, 230, 1);
-    border-radius: 6px;
-    color: white;
+    width: 255px;
+    height: 58px;
+    background-color: transparent;
+    border: 1px solid #B897E6;
+    border-radius: 8px;
+    color: #B897E6;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 157px;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -37,55 +30,20 @@
 }
 
 .banner-content p {
-    max-width: 623px;
-    max-height: 145px;
+    max-width: 880px;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    color: #686868;
-    margin-bottom: 41px;
+    text-align: center;
+    color: white;
+    margin-bottom: 56px;
 }
 
 .banner-content h1 {
     font-weight: 500;
-    font-size: 42px;
-    line-height: 51px;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: center;
     color: white;
-    margin-bottom: 15px;
-}
-
-.play-btn {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    right: 291px;
-    top: 220px;
-    cursor: pointer;
-}
-
-.play-btn-back {
-    width: 100%;
-    height: 100%;
-    background: rgba(184, 151, 230, 1);
-    mix-blend-mode: normal;
-    opacity: 0.4;
-    border-radius: 50%;
-    z-index: 1;
-    transition: 0.3s;
-}
-
-.play-btn:hover > .play-btn-back {
-    background: #5a62f9;
-}
-
-.play-btn img {
-    width: 39%;
-    height: 46%;
-    position: absolute;
-    top: 27px; 
-    right: 27px;
-    bottom: 34px;
-    left: 34px;
-    z-index: 2;
+    margin-bottom: 27px;
 }

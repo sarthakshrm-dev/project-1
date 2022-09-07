@@ -14,7 +14,6 @@ function SocialProof() {
   }
 
   return (
-    <>
       <div className="reviews">
         <h2>Don't take our word for it</h2>
         <div onMouseDown={handleDown} onMouseUp={handleUp} className="reviews-container">
@@ -26,7 +25,6 @@ function SocialProof() {
           </ScrollContainer>
         </div>
       </div>
-    </>
   );
 }
 
