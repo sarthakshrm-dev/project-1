@@ -24,6 +24,9 @@ function SocialProof() {
             <ReviewBox />
           </ScrollContainer>
         </div>
+        <div className="next-btn">
+          <img src={require('../images/next-btn.png')} alt="" />
+        </div>
       </div>
   );
 }

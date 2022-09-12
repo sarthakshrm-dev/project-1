@@ -7,7 +7,7 @@ import Solutions from "./components/Solutions"
 import Industry from "./components/Industry";
 import Reviews from "./components/Reviews"
 import Footer from "./components/Footer";
-import ChatBot from "./components/ChatBot";
+import ChatBot from "./components/ChatBot/ChatBot";
 
 function App() {
     return(

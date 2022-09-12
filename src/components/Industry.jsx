@@ -32,7 +32,7 @@ function Industry() {
                     slidesPerView='auto'
                     centeredSlides={true}
                     loop={true}
-                    speed={400}
+                    speed={600}
                     autoplay={{ delay: 3000 }}
                     className='slider'>
                         {cards.map((data, index) => (

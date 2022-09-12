@@ -9,7 +9,7 @@
     letter-spacing: 0px;
     color: white;
     text-align: center;
-    margin-bottom: 68px;
+    margin-bottom: 69px;
 }
 
 .reviews-row {
@@ -22,4 +22,19 @@
 
 .reviews-row::-webkit-scrollbar {
     display: none;
+}
+
+.next-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid #B897E6;
+    filter: drop-shadow(0px 4px 4px rgba(12, 4, 102, 0.2));
+    margin-top: 27px;
+    margin-right: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }

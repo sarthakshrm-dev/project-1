@@ -3,14 +3,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 140px;
+    margin-bottom: 109px;
 }
 
 .features-section h2 {
     font-weight: 500;
     font-size: 36px;
     line-height: 44px;
-    margin-bottom: 49px;
+    margin-bottom: 92px;
+}
+
+.features-container {
+    position: relative;
+    width: 100%;
+    height: 638px;
 }
 
 .features-menu {
@@ -18,7 +24,9 @@
     align-items: center;
     justify-content: center;
     height: fit-content;
-    width: 100%;
+    width: fit-content;
+    position: absolute;
+    right: 0px;
 }
 
 .features-options {
@@ -27,7 +35,7 @@
     line-height: 29px;
     color: white;
     width: 365px;
-    margin-right: 60px;
+    margin-right: 152px;
 }
 
 .features-options a {
@@ -211,20 +219,25 @@
 }
 
 .site-mockup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    background-position: center center;
-    width: 846px;
-    height: 474px;
-    border: 1px solid white;
-    border-radius: 20px;
-    margin-top: 8.5px;
+    width: 907px;
+    height: 638px;
+    border-radius: 30px 0px 0px 0px;
+    position: relative;
 }
 
 .site-mockup img {
-    width: 826px;
-    height: 454px;
-    border-radius: 20px;
+    width: 907px;
+    height: 638px;
+    border-radius: 30px 0px 0px 0px; 
+}
+
+.site-mockup-gradient {
+    width: 907px;
+    height: 638px;
+    border-radius: 30px 0px 0px 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to top, #000000 0%, rgba(38, 38, 38, 0) 100%);
+    z-index: 2;
 }

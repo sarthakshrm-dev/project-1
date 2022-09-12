@@ -1,10 +1,10 @@
 footer {
     display: flex;
-    background-color: #1C1B1B;
+    background-color: #171322;
     width: 100%;
     height: 353px;
     color: white;
-    margin-top: 180px;
+    margin-top: 215px;
 }
 
 footer img {
@@ -37,12 +37,12 @@ footer img {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #686868;
+    color: white;
     text-decoration: none;
     margin-bottom: 19px;
     transition: 0.2s;
 }
 
 .footer-links a:hover {
-    color: #828282;
+    color: #c8c8c8;
 }
