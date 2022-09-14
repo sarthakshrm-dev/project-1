@@ -51,6 +51,11 @@
     height: 70px;
     border-radius: 10px 10px 0px 0px;
     z-index: 200;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
 }
 
 .close-chat {
@@ -61,12 +66,13 @@
     align-items: center;
     top: 0;
     right: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 0px 10px 0px 10px;
+    width: 60px;
+    height: 100%;
+    border-radius: 0px 10px 0px 0px;
     cursor: pointer;
     transition: 0.2s;
-    font-size: 20px;
+    font-size: 30px;
+    color: white;
 }
 
 .close-chat:hover {
@@ -142,6 +148,11 @@
   background-color: #B897E6;
   border: none;
   transition: 0.2s;
+  font-size: 22px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .chatbox button:hover {

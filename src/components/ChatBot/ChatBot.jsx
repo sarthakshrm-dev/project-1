@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { FaCommentAlt } from 'react-icons/fa'
-import { GrClose } from 'react-icons/gr'
+import { AiOutlineCloseCircle } from 'react-icons/ai'
+import { IoMdSend } from 'react-icons/io'
 import { motion } from 'framer-motion'
 import messageFlow from './MessageFlow'
 import {initialOptions, features, stages, demo, flowEnd} from './Options'
@@ -54,6 +55,7 @@ function ChatBot() {
             setFlow(0)
             setResponse('')
             setData(0)
+            setSend(0)
         }, 200)
     }
 
@@ -233,7 +235,8 @@ function ChatBot() {
                 <div style={{display: chat ? 'none' : 'inline-block'}}><FaCommentAlt /></div>
 				<motion.div variants={contentAnim} initial={animation ? "hidden" : "visible"} animate={animation ? "visible" : "hidden"} className='chatbox-content'>
 					<div className="chatbox-header">
-						<div className='close-chat' onClick={closeClick}><GrClose /></div>
+                        <h2>Chat with us!</h2>
+						<div className='close-chat' onClick={closeClick}><AiOutlineCloseCircle /></div>
 					</div>
 					<div ref={scrollEnd} className='text-area'>
 						{flow>=0 && <MessageReceive message={messageFlow[0]} />}
@@ -300,7 +303,7 @@ function ChatBot() {
 					</div>
                     <form onSubmit={handleSubmit} action="">
                         <input type={flow===1.1 ? "text" : flow>1.1 && "email"} value={input} onChange={handleChange} placeholder={disableInput ? 'Select Option' : 'Type'} disabled={disableInput ? true : false} required />
-                        <button></button>
+                        <button> <IoMdSend /></button>
                     </form>
 				</motion.div>
             </motion.div>}
