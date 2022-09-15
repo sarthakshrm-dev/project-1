@@ -1,6 +1,14 @@
 .solutions-section {
      margin-bottom: 211px;
      position: relative;
+     height: 800vh;
+}
+
+.solutions-sticky {
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    padding-top: 10px;
 }
 
 .solutions-section::before {
@@ -28,12 +36,18 @@
 .solutions-content-container {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+}
+
+.solutions-content-animation {
+    height: 100vh;
+    overflow: hidden;
 }
 
 .solutions-content {
     margin-right: 59px;
+    padding-top: 45px;
+    display: inline-block;
 }
 
 .solutions-content h2 {
@@ -43,6 +57,10 @@
     letter-spacing: 0em;    
     color: white;
     margin-bottom: 53px; 
+}
+
+.solutions-content ul {
+    margin-bottom: 40vh;
 }
 
 .solutions-content li {
@@ -80,6 +98,10 @@
 }
 
 .solutions-map {
+    background-image: url('../images/Solutions/solutions-base-map.svg');
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 570px;
     height: 428px;
     position: relative;

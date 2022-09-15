@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 9px;
+    padding-left: 60px;
 }
 
 .features-section h2 {
@@ -12,6 +12,7 @@
     line-height: 39px;
     letter-spacing: 0em;    
     margin-bottom: 97px;
+    margin-right: 60px;
 }
 
 .features-container {
@@ -59,7 +60,7 @@
     position: absolute;
     right: -43px;
     top: 25%;
-    background-image: url('../images/links-arrow.png');
+    background-image: url('../images/links-arrow.svg');
     background-size: 100%;
     width: 18px;
     height: 16px;
@@ -72,7 +73,7 @@
     color: #A1A1A1;
     cursor: pointer;
     background: transparent;
-    padding: 13px 38px 16px 18px;
+    padding: 14px 46px 15px 18px;
     border-radius: 100px;
     font-size: 24px;
     font-weight: 500;
@@ -90,7 +91,7 @@
     margin-top: 28px;
     cursor: pointer;
     background: transparent;
-    padding: 13px 38px 16px 18px;
+    padding: 14px 46px 15px 18px;
     border-radius: 100px;
     font-size: 24px;
     font-weight: 500;
@@ -108,7 +109,7 @@
     margin-top: 28px;
     cursor: pointer;
     background: transparent;
-    padding: 13px 38px 16px 18px;
+    padding: 14px 46px 15px 18px;
     border-radius: 100px;
     font-size: 24px;
     font-weight: 500;
@@ -126,7 +127,7 @@
     margin-top: 28px;
     cursor: pointer;
     background: transparent;
-    padding: 13px 38px 16px 18px;
+    padding: 14px 46px 15px 18px;
     border-radius: 100px;
     font-size: 24px;
     font-weight: 500;
@@ -140,7 +141,7 @@
     width: fit-content;
     display: flex;
     align-items: center;
-    background: linear-gradient(95deg, #B897E6 -32.57%, rgba(104, 104, 104, 0) 76.13%);
+    background: linear-gradient(90.42deg, #B897E6 -52.57%, rgba(104, 104, 104, 0) 85.13%);
     border-radius: 100px;
     color: white;
     font-size: 24px;
@@ -154,7 +155,7 @@
     width: fit-content;
     display: flex;
     align-items: center;
-    background: linear-gradient(95deg, #B897E6 -32.57%, rgba(104, 104, 104, 0) 76.13%);
+    background: linear-gradient(90.42deg, #B897E6 -52.57%, rgba(104, 104, 104, 0) 85.13%);
     border-radius: 100px;
     color: white;
     font-size: 24px;
@@ -168,7 +169,7 @@
     width: fit-content;
     display: flex;
     align-items: center;
-    background: linear-gradient(95deg, #B897E6 -32.57%, rgba(104, 104, 104, 0) 76.13%);
+    background: linear-gradient(90.42deg, #B897E6 -52.57%, rgba(104, 104, 104, 0) 85.13%);
     border-radius: 100px;
     color: white;
     font-size: 24px;
@@ -182,7 +183,7 @@
     width: fit-content;
     display: flex;
     align-items: center;
-    background: linear-gradient(95deg, #B897E6 -32.57%, rgba(104, 104, 104, 0) 76.13%);
+    background: linear-gradient(90.42deg, #B897E6 -52.57%, rgba(104, 104, 104, 0) 85.13%);
     border-radius: 100px;
     color: white;
     font-size: 24px;
@@ -196,9 +197,9 @@
     width: fit-content;
     display: flex;
     align-items: center;
-    background: linear-gradient(95deg, #B897E6 -32.57%, rgba(104, 104, 104, 0) 76.13%);
+    background: linear-gradient(90.42deg, #B897E6 -52.57%, rgba(104, 104, 104, 0) 85.13%);
     border-radius: 100px;
-    padding: 13px 38px 16px 18px;
+    padding: 14px 46px 15px 18px;
     color: #B897E6;    
 }
 
@@ -206,86 +207,179 @@
     width: fit-content;
     display: flex;
     align-items: center;
-    background: linear-gradient(95deg, #B897E6 -32.57%, rgba(104, 104, 104, 0) 76.13%);
+    background: linear-gradient(90.42deg, #B897E6 -52.57%, rgba(104, 104, 104, 0) 85.13%);
     border-radius: 100px;
-    padding: 13px 38px 16px 18px;
+    padding: 14px 46px 15px 18px;
     margin-top: 28px;
     color: #B897E6;    
 }
 
-.feature1:hover .feature-icon {
+.feature-icon1 {
     border-radius: 50%;
+    background-image: url('../images/Features/02_MT.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
     width: 52px;
     height: 52px;
-    opacity: 0.7;
-    border: 2px solid #7B44C7;
-    background-color: transparent;
-    margin-right: 25px;
-
-}
-
-.feature2:hover .feature-icon {
-    border-radius: 50%;
-    width: 52px;
-    height: 52px;
-    opacity: 0.7;
-    border: 2px solid #7B44C7;
-    background-color: transparent;
-    margin-right: 25px;
-
-}
-
-.feature3:hover .feature-icon {
-    border-radius: 50%;
-    width: 52px;
-    height: 52px;
-    opacity: 0.7;
-    border: 2px solid #7B44C7;
-    background-color: transparent;
-    margin-right: 25px;
-
-}
-
-.feature4:hover .feature-icon {
-    border-radius: 50%;
-    width: 52px;
-    height: 52px;
-    opacity: 0.7;
-    border: 2px solid #7B44C7;
-    background-color: transparent;
-    margin-right: 25px;
-
-}
-
-.feature1-active > .feature-icon {
-    border-radius: 50%;
-    width: 52px;
-    height: 52px;
-    opacity: 0.7;
-    border: 2px solid #7B44C7;
-    background-color: transparent;
-    margin-right: 25px;
-}
-
-.feature-active > .feature-icon {
-    border-radius: 50%;
-    width: 52px;
-    height: 52px;
-    opacity: 0.7;
-    border: 2px solid #7B44C7;
-    background-color: transparent;
-    margin-right: 25px;
-}
-
-.feature-icon {
-    border-radius: 50%;
-    width: 52px;
-    height: 52px;
-    background: rgba(184, 151, 230, 1);
-    opacity: 0.7;
+    opacity: 1;
     margin-right: 25px;
     transition: 0.3s;
-    background: transparent;
+}
+
+.feature-icon2 {
+    border-radius: 50%;
+    background-image: url('../images/Features/03_ME.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    opacity: 1;
+    margin-right: 25px;
+    transition: 0.3s;
+}
+
+.feature-icon3 {
+    border-radius: 50%;
+    background-image: url('../images/Features/04_CS.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    opacity: 1;
+    margin-right: 25px;
+    transition: 0.3s;
+}
+
+.feature-icon4 {
+    border-radius: 50%;
+    background-image: url('../images/Features/05_SS.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    opacity: 1;
+    margin-right: 25px;
+    transition: 0.3s;
+}
+
+.feature1:hover .feature-icon1 {
+    border-radius: 50%;
+    background-image: url('../images/Features/02B_MT.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    opacity: 0.7;
+    border: 2px solid #B897E6;
+    background-color: transparent;
+    margin-right: 25px;
+
+}
+
+.feature2:hover .feature-icon2 {
+    border-radius: 50%;
+    background-image: url('../images/Features/03B_ME.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    opacity: 0.7;
+    border: 2px solid #B897E6;
+    background-color: transparent;
+    margin-right: 25px;
+
+}
+
+.feature3:hover .feature-icon3 {
+    border-radius: 50%;
+    background-image: url('../images/Features/04B_CS.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    opacity: 0.7;
+    border: 2px solid #B897E6;
+    background-color: transparent;
+    margin-right: 25px;
+
+}
+
+.feature4:hover .feature-icon4 {
+    border-radius: 50%;
+    background-image: url('../images/Features/05B_SS.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    opacity: 0.7;
+    border: 2px solid #B897E6;
+    background-color: transparent;
+    margin-right: 25px;
+
+}
+
+.feature1-active > .feature-icon1 {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    opacity: 0.7;
+    border: 2px solid #B897E6;
+    background-image: url('../images/Features/02B_MT.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-right: 25px;
+}
+
+.feature-active > .feature-icon2 {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    opacity: 0.7;
+    background-image: url('../images/Features/03B_ME.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid #B897E6;
+    background-color: transparent;
+    margin-right: 25px;
+}
+
+.feature-active > .feature-icon3 {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    opacity: 0.7;
+    background-image: url('../images/Features/04B_CS.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid #B897E6;
+    background-color: transparent;
+    margin-right: 25px;
+}
+
+.feature-active > .feature-icon4 {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    opacity: 0.7;
+    background-image: url('../images/Features/05B_SS.svg');
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid #B897E6;
+    background-color: transparent;
+    margin-right: 25px;
 }
 
 .site-mockup {
@@ -312,3 +406,14 @@
     background: linear-gradient(to top, #000000 0%, rgba(38, 38, 38, 0) 100%);
     z-index: 2;
 }
+
+@media only screen and (min-width: 1250px) and (max-width: 1470px) {
+    .site-mockup {
+        width: 857px;
+        height: 588px;
+    }
+    .site-mockup img {
+        width: 857px;
+        height: 588px;
+    }
+  }

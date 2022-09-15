@@ -1,8 +1,6 @@
 import React from 'react'
-import { motion, useTransform } from 'framer-motion'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useScroll } from 'framer-motion'
 import '../styles/Industries.css'
 import { useRef } from 'react';
 import { useEffect } from 'react';
@@ -10,104 +8,118 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Industries() {
 
-  const ref = useRef(null)
+  const industriesContainer = useRef(null)
 
   useEffect(() => {
 
-    const masterTimeline = gsap.timeline();
+    const element = industriesContainer.current;
 
-    const element = ref.current;
     gsap.fromTo(
-      element.querySelector(".industries-heading"),
+      element.querySelector("#retail-dots"),
       {
-        opacity: 1,
+        height: '0px'
       },
       {
-        opacity: 0,
-        scrollTrigger: {
-          trigger: element.querySelector(".sticky"),
-          start: "top top",
-          end: "center center",
-          scrub: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      element.querySelector("#retail-industry"),
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
+        height: '200px',
         scrollTrigger: {
           trigger: element,
           start: "top top",
-          end: "+500",
+          end: "+250",
           scrub: true,
         },
       }
     );
-
     gsap.fromTo(
-      element.querySelector("#foodchain-industry"),
+      element.querySelector("#retail-heading"),
       {
-        opacity: 0,
+        transform: 'translateY(100%)'
+      },
+      {
+        transform: 'translateY(0)',
+        scrollTrigger: {
+          trigger: element,
+          start: "=250",
+          end: "=450",
+          scrub: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      element.querySelector("#retail-content"),
+      {
+        opacity:0
       },
       {
         opacity: 1,
         scrollTrigger: {
           trigger: element,
-          start: "=600",
-          end: "=1000",
+          start: "=350",
+          end: "=500",
           scrub: true,
         },
+        onComplete: () => {
+          gsap.fromTo(
+            element.querySelector("#retail-content"),
+            {
+              opacity: 1,
+            },
+            { opacity: 0, 
+              scrollTrigger: {
+                trigger: element,
+                start: "=650",
+                end: "=800",
+                scrub: true,
+              },
+            },
+          )
+          gsap.fromTo(
+            element.querySelector("#retail-heading"),
+            {
+              transform: 'translateY(0)'
+            },
+            {
+              transform: 'translateY(100%)',
+              scrollTrigger: {
+                trigger: element,
+                start: "=550",
+                end: "=750",
+                scrub: true,
+              },
+            }
+          );
+          gsap.fromTo(
+            element.querySelector("#retail-dots"),
+            {
+              height: '200px'
+            },
+            {
+              height: '0px',
+              scrollTrigger: {
+                trigger: element,
+                start: "=750",
+                end: "=1000",
+                scrub: true,
+              },
+            }
+          );
+        }
       }
-    );
-
-    gsap.fromTo(
-      element.querySelector("#third-industry"),
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: element,
-          start: "=1000",
-          end: "bottom center",
-          scrub: true,
-        },
-      }
-    );
+    )
   }, [])
 
 
   return (
-    <div ref={ref} className='industries-section'>
-      <div className='sticky'>
+    <div ref={industriesContainer} className='industries-section'>
+      <div className='industries-sticky'>
         <h2 className='industries-heading'>Industries we serve</h2>
           <div className='industries-animation'>
             <div id='retail-industry'>
-              <h3>Retail Industry</h3>
-              <ul>
-                <li>Identify new markets to expand</li>
-                <li>Analyse customer segments of visiting customers.</li>
-              </ul>
-              <div id='retail-dots'></div>
-            </div>
-            <div id='foodchain-industry'>
-              <h3>Retail Industry</h3>
-              <ul>
-                <li>Identify new markets to expand</li>
-                <li>Analyse customer segments of visiting customers.</li>
-              </ul>
-              <div id='retail-dots'></div>
-            </div>
-            <div id='third-industry'>
-              <h3>Retail Industry</h3>
-              <ul>
-                <li>Identify new markets to expand</li>
-                <li>Analyse customer segments of visiting customers.</li>
+              <div id='retail-heading-container'>
+                <h3 id='retail-heading'>Retail Industry</h3>
+              </div>
+              <ul id='retail-content'>
+                <li>Compare locations for new outlets</li>
+                <li>Analyse sales impact on existing portfolio</li>
               </ul>
               <div id='retail-dots'></div>
             </div>

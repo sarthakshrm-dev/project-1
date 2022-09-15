@@ -18,9 +18,9 @@ function Banner() {
                     </span>
                 </h1>
                 <p><span style={{color: '#B897E6'}}>Sociometrik LIVE</span> is a modern data intelligence platform to enable effective location decisions for your enterprise needs. Leverage 100s of data sources to expand and optimize your offline sales network, pick ideal sites for your stores or distributors, estimate demand potential for your product category and analyze location specific risks and opportunities.</p>
-                <button>Requeest for a demo</button>
+                <button>Request for a demo</button>
             </div>
-            {/* <div className="banner-background-dots-container">
+            <div className="banner-background-dots-container">
                 <div className="banner-background-dot dot-1">
                     <div className="inner-dot"></div>
                 </div>
@@ -42,7 +42,7 @@ function Banner() {
                 <div className="banner-background-dot dot-7">
                     <div className="inner-dot"></div>
                 </div>
-            </div> */}
+            </div>
             <ClientList />
         </div>
     )

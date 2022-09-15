@@ -42,18 +42,21 @@ function Features() {
 
     return(
         <div className="features-section">
-            <h2>How does it work? Platform Features!</h2>
+            <h2>Platform Features</h2>
             <div className="features-container">
                 <div className="features-menu">
                     <div className="features-options">
-                        <div className= {feature1 ? "feature1-active" : "feature1"} onClick={handleClick}><div className="feature-icon"></div>Macro Trends</div>
-                        <div className= {feature2 ? "feature-active" : "feature2"} onClick={handleClick}><div className="feature-icon"></div>Market Expansion</div>
-                        <div className= {feature3 ? "feature-active" : "feature3"} onClick={handleClick}><div className="feature-icon"></div>Customer Segmentation</div>
-                        <div className= {feature4 ? "feature-active" : "feature4"} onClick={handleClick}><div className="feature-icon"></div>Site Selection</div>
+                        <div className= {feature1 ? "feature1-active" : "feature1"} onClick={handleClick}><div className="feature-icon1"></div>Macro Trends</div>
+                        <div className= {feature2 ? "feature-active" : "feature2"} onClick={handleClick}><div className="feature-icon2"></div>Market Expansion</div>
+                        <div className= {feature3 ? "feature-active" : "feature3"} onClick={handleClick}><div className="feature-icon3"></div>Customer Segmentation</div>
+                        <div className= {feature4 ? "feature-active" : "feature4"} onClick={handleClick}><div className="feature-icon4"></div>Site Selection</div>
                         <a href="">Request for a demo</a>
                     </div>
                     <div className="site-mockup">
-                        <img src={require('../images/site-mockup.png')} alt="" />
+                        {feature1 && <img src={require('../images/Features/site-mockup1.png')} alt="macro-trends-mockup" />}
+                        {feature2 && <img src={require('../images/Features/site-mockup2.png')} alt="market-expansion-mockup" />}
+                        {feature3 && <img src={require('../images/Features/site-mockup3.png')} alt="customer-segmentation-mockup" />}
+                        {feature4 && <img src={require('../images/Features/site-mockup4.png')} alt="site-selection-mockup" />}
                         <div className="site-mockup-gradient"></div>
                     </div>
                 </div>

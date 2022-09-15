@@ -4,7 +4,7 @@
     height: 500vh;
 }
 
-.sticky {
+.industries-sticky {
     position: sticky;
     top: 0;
     height: fit-content;
@@ -24,52 +24,36 @@
 }
 
 #retail-industry {
-    border: 1px dashed #B897E6;
-    border-radius: 10px;
     position: absolute;
-    top: -184px;
-    left: 30%;
-    padding: 6px 27px 14px 16px;
-    color: #B897E6;
-    opacity: 0;
+    top: -190px;
+    left: 24%;
 }
 
-#foodchain-industry {
-    border: 1px dashed #B897E6;
-    border-radius: 10px;
-    position: absolute;
-    top: -184px;
-    left: 70%;
-    padding: 6px 27px 14px 16px;
-    color: #B897E6;
+#retail-heading-container {
+    height: 26px;
+    margin-bottom: 13px;
+    overflow: hidden;
 }
 
-#third-industry {
-    border: 1px dashed #B897E6;
-    border-radius: 10px;
-    position: absolute;
-    top: -184px;
-    left: 1%;
-    padding: 6px 27px 14px 16px;
-    color: #B897E6;
-}
-
-#retail-industry h3 {
-    font-size: 22px;
+#retail-heading {
+    font-size: 20px;
     font-weight: 500;
-    line-height: 27px;
+    line-height: 24px;
     letter-spacing: 0em;
-    margin-bottom: 7px;
+    color: #B897E6;
 }
 
-#retail-industry ul {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0em;
-    margin-left: 18px;
+#retail-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;    
     list-style-type: none;
-    max-width: 307px;
+    max-width: 300px;
+    background: linear-gradient(180deg, rgba(58, 19, 123, 0.6) 0%, rgba(80, 34, 90, 0.6) 99.99%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: 6px;
+    padding: 15px 13px 16px 16px;
+    color: white;
 }
 
 #retail-industry ul :nth-child(1) {
@@ -82,19 +66,40 @@
 
 #retail-industry li::before {
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     position: absolute;
     border-radius: 50%;
-    background: #B897E6;
-    left: -21px;
-    top: 25%;
+    background-image:  url('../images/industries-bullet.png');
+    background-size: 40%;
+    background-position: 72%;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    left: -22px;
+    top: 0;
 }
 
 #retail-dots {
     width: 0px;
     height: 200px;
-    border-left: 2px dashed #B897E6;
+    border-image: linear-gradient(to bottom, #B897E6, transparent);
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-image-slice: 1;
+    border-radius: 10px;
+    position: absolute;
+    left: 60%;
+    bottom: -215.5px;
+}
+
+#foodchain-dots {
+    width: 0px;
+    height: 200px;
+    border-image: linear-gradient(to bottom, #B897E6, transparent);
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-image-slice: 1;
+    border-radius: 10px;
     position: absolute;
     left: 35%;
     bottom: -207.5px;
