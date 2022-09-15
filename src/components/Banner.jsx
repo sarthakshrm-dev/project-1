@@ -17,7 +17,7 @@ function Banner() {
                         <span class="banner-rotating-text">Retail Consultants</span>
                     </span>
                 </h1>
-                <p><span style={{color: '#B897E6'}}>Sociometrik LIVE</span> is a modern data intelligence platform to enable effective location decisions for your enterprise needs. Leverage 100s of data sources to expand and optimize your offline sales network, pick ideal sites for your stores or distributors, estimate demand potential for your product category and analyze location specific risks and opportunities.</p>
+                <p><span className="colored-text">Sociometrik LIVE</span> is a modern data intelligence platform to enable effective location decisions for your enterprise needs. Leverage 100s of data sources to expand and optimize your offline sales network, pick ideal sites for your stores or distributors, estimate demand potential for your product category and analyze location specific risks and opportunities.</p>
                 <button>Request for a demo</button>
             </div>
             <div className="banner-background-dots-container">

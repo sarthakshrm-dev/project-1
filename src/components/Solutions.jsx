@@ -19,11 +19,11 @@ function KnowMore() {
             transform: 'translateY(0)'
           },
           {
-            transform: 'translateY(-100%)',
+            transform: 'translateY(-102%)',
             scrollTrigger: {
               trigger: element,
               start: "top top",
-              end: "bottom center",
+              end: "=3098",
               scrub: true,
             },
           }
@@ -38,37 +38,37 @@ function KnowMore() {
                     <div className="solutions-content-animation">
                         <div className="solutions-content">
                             <h2>Identify growth markets</h2>
-                            <ul>
+                            <ul className="IGM">
                                 <li>Confidently explore new geographies to expand, backed by extensive market data.</li>
                                 <li>Identify growth hotspots to open new retail outlets or distributor tie-ups.</li>
                                 <li>Compare market metrics and consumption behaviour across many markets.</li>
                             </ul>
                             <h2>Identify target audience</h2>
-                            <ul>
+                            <ul className="ITA">
                                 <li>Explore 100s of detailed customer segments to determine the ideal audience.</li>
                                 <li>Match your ideal customer segments to potential candidate locations.</li>
                                 <li>Explore customer segments based on socioeconomic attributes & smartphone usage.</li>
                             </ul>
                             <h2>Optimize existing retail portfolio</h2>
-                            <ul>
+                            <ul className="OERP">
                                 <li>Achieve maximum sales push from existing markets by adding new retail outlets.</li>
                                 <li>Identify white-spaces in existing markets to set up new retail outlets.</li>
                                 <li>Analyze sales impact on the overall portfolio of adding or closing sites of your existing markets.</li>
                             </ul>
                             <h2>Track & monitor footfall</h2>
-                            <ul>
+                            <ul className="TMF">
                                 <li>Monitor daily customer footfall in and around your trade area.</li>
                                 <li>Compare potential locations based on footfall.</li>
                                 <li>Analyse customer tastes & preferences of visiting audience to your store.</li>
                             </ul>
                             <h2>Optimize distribution network</h2>
-                            <ul>
+                            <ul className="ODN">
                                 <li>Pick areas/locations to setup new dealerships in your existing markets to push your sales.</li>
                                 <li>Benchmark performance of existing dealers against demand potential of their area.</li>
                                 <li>Identify new geographies with high demand potential to establish new dealer networks.</li>
                             </ul>
                             <h2>Identify best location for OOH advertising</h2>
-                            <ul>
+                            <ul className="OOH">
                                 <li>Pick best billboard locations for your offline ADs.</li>
                                 <li>Compare billboard locations based on footfall and customer segments of passing traffic.</li>
                                 <li>Identify appropriate locations for offline promotional activities based on right visiting customer segments.</li>

@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 60px;
+
 }
 
 .features-section h2 {
@@ -18,16 +18,19 @@
 .features-container {
     position: relative;
     width: 100%;
-    height: 638px;
 }
 
 .features-menu {
     display: flex;
     justify-content: center;
     height: fit-content;
-    width: fit-content;
-    position: absolute;
-    right: 0px;
+    width: 100%;
+}
+
+.features-options-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .features-options {
@@ -35,8 +38,6 @@
     font-size: 24px;
     line-height: 29px;
     color: white;
-    width: fit-content;
-    margin-right: 121px;
 }
 
 .features-options a {
@@ -383,22 +384,22 @@
 }
 
 .site-mockup {
-    width: 907px;
-    height: 638px;
+    width: 58vw;
+    height: auto;
     border-radius: 30px 0px 0px 0px;
     position: relative;
     z-index: -1;
 }
 
 .site-mockup img {
-    width: 907px;
-    height: 638px;
+    width: 58vw;
+    height: auto;
     border-radius: 30px 0px 0px 0px; 
 }
 
 .site-mockup-gradient {
-    width: 907px;
-    height: 638px;
+    width: 58vw;
+    height: 100%;
     border-radius: 30px 0px 0px 0px;
     position: absolute;
     bottom: 0;
@@ -406,14 +407,3 @@
     background: linear-gradient(to top, #000000 0%, rgba(38, 38, 38, 0) 100%);
     z-index: 2;
 }
-
-@media only screen and (min-width: 1250px) and (max-width: 1470px) {
-    .site-mockup {
-        width: 857px;
-        height: 588px;
-    }
-    .site-mockup img {
-        width: 857px;
-        height: 588px;
-    }
-  }

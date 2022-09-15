@@ -47,6 +47,10 @@
     margin-bottom: 29px;
 }
 
+.colored-text {
+  color: #B897E6;
+}
+
 .banner-content h1 {
     font-size: 40px;
     font-weight: 500;
@@ -59,7 +63,7 @@
 
 @media only screen and (min-width: 1250px) and (max-width: 1370px) {
   .banner-content h1 {
-    font-size: 37px;
+    font-size: 36px;
   }
 }
 
