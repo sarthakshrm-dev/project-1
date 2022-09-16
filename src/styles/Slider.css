@@ -1,20 +1,20 @@
-.industry-section {
-    margin-bottom: 160.5px;
+.slider-section {
+    padding-top: 30px;
 }
 
-.industry-heading {
+.slider-section-heading {
     font-size: 36px;
     font-weight: 500;
     line-height: 44px;  
     letter-spacing: 0em;
-    margin-bottom: 26px;
+    margin-bottom: 32.5px;
     text-align: center;
     color: white;
 }
 
 .carousel {
     width: 100%;
-    height: 618px;
+    height: 525px;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -66,12 +66,82 @@
     padding: 30px 0px 0px 18px;
 }
 
-.slider-image {
+.slider-image1 {
     width: 473px;
     height: 93%;
-    background-image: url('../images/slider-background.png');
-    background-position: top left;
+    background-image: url('../images/Slider/SliderImage-0.png');
+    background-position: center right;
     background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3px;
+    bottom: 10px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.slider-image2 {
+    width: 473px;
+    height: 93%;
+    background-image: url('../images/Slider/SliderImage-1.png');
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3px;
+    bottom: 10px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.slider-image3 {
+    width: 473px;
+    height: 93%;
+    background-image: url('../images/Slider/SliderImage-2.png');
+    background-position: center right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3px;
+    bottom: 10px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.slider-image4 {
+    width: 473px;
+    height: 93%;
+    background-image: url('../images/Slider/SliderImage-3.png');
+    background-position: center right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3px;
+    bottom: 10px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.slider-image5 {
+    width: 473px;
+    height: 93%;
+    background-image: url('../images/Slider/SliderImage-4.png');
+    background-position: center right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 3px;
+    bottom: 10px;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.slider-image6 {
+    width: 473px;
+    height: 93%;
+    background-image: url('../images/Slider/SliderImage-5.png');
+    background-position: center center;
+    background-size: 90%;
     background-repeat: no-repeat;
     position: absolute;
     right: 3px;
@@ -123,6 +193,11 @@
     background-size: 100%;
     width: 18px;
     height: 16px;
+    transition: 0.2s;
+}
+
+.slider-link a:hover::before {
+    right: -60px;
 }
 
 .slider-link a {

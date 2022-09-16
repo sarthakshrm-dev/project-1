@@ -1,10 +1,11 @@
 .industries-section {
-    margin-bottom: 96px;
+    margin-bottom: 66px;
     color: white;
-    height: 500vh;
+    height: 3750px;
 }
 
 .industries-sticky {
+    padding-top: 30px;
     position: sticky;
     top: 0;
     height: fit-content;
@@ -25,8 +26,8 @@
 
 #retail-industry {
     position: absolute;
-    top: -190px;
-    left: 24%;
+    top: -37%;
+    left: 16%;
 }
 
 #retail-heading-container {
@@ -81,18 +82,74 @@
 
 #retail-dots {
     width: 0px;
-    height: 200px;
+    height: 130px;
     border-image: linear-gradient(to bottom, #B897E6, transparent);
     border-left-width: 3px;
     border-left-style: solid;
     border-image-slice: 1;
     border-radius: 10px;
     position: absolute;
-    left: 60%;
-    bottom: -215.5px;
+    left: 34%;
+    bottom: -145.5px;
 }
 
-#foodchain-dots {
+#restaurants-industry {
+    position: absolute;
+    top: -36%;
+    left: 2%;
+}
+
+#restaurants-heading-container {
+    height: 26px;
+    margin-bottom: 13px;
+    overflow: hidden;
+}
+
+#restaurants-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #B897E6;
+}
+
+#restaurants-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;    
+    list-style-type: none;
+    max-width: 300px;
+    background: linear-gradient(180deg, rgba(58, 19, 123, 0.6) 0%, rgba(80, 34, 90, 0.6) 99.99%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: 6px;
+    padding: 15px 13px 16px 16px;
+    color: white;
+}
+
+#restaurants-industry ul :nth-child(1) {
+    margin-bottom: 15px;
+}
+
+#restaurants-industry li {
+    position: relative;
+}
+
+#restaurants-industry li::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-image:  url('../images/industries-bullet.png');
+    background-size: 40%;
+    background-position: 72%;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    left: -22px;
+    top: 0;
+}
+
+#restaurants-dots {
     width: 0px;
     height: 200px;
     border-image: linear-gradient(to bottom, #B897E6, transparent);
@@ -101,8 +158,347 @@
     border-image-slice: 1;
     border-radius: 10px;
     position: absolute;
-    left: 35%;
-    bottom: -207.5px;
+    left: 34%;
+    bottom: -215.5px;
+}
+
+#bfsi-industry {
+    position: absolute;
+    top: -24%;
+    left: 29%;
+}
+
+#bfsi-heading-container {
+    height: 26px;
+    margin-bottom: 13px;
+    overflow: hidden;
+}
+
+#bfsi-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #B897E6;
+}
+
+#bfsi-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;    
+    list-style-type: none;
+    max-width: 300px;
+    background: linear-gradient(180deg, rgba(58, 19, 123, 0.6) 0%, rgba(80, 34, 90, 0.6) 99.99%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: 6px;
+    padding: 15px 13px 16px 16px;
+    color: white;
+}
+
+#bfsi-industry ul :nth-child(1) {
+    margin-bottom: 15px;
+}
+
+#bfsi-industry li {
+    position: relative;
+}
+
+#bfsi-industry li::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-image:  url('../images/industries-bullet.png');
+    background-size: 40%;
+    background-position: 72%;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    left: -22px;
+    top: 0;
+}
+
+#bfsi-dots {
+    width: 0px;
+    height: 200px;
+    border-image: linear-gradient(to bottom, #B897E6, transparent);
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-image-slice: 1;
+    border-radius: 10px;
+    position: absolute;
+    left: 34%;
+    bottom: -215.5px;
+}
+
+#building-industry {
+    position: absolute;
+    top: -8%;
+    left: 53%;
+}
+
+#building-heading-container {
+    height: 26px;
+    margin-bottom: 13px;
+    overflow: hidden;
+}
+
+#building-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #B897E6;
+}
+
+#building-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;    
+    list-style-type: none;
+    max-width: 300px;
+    background: linear-gradient(180deg, rgba(58, 19, 123, 0.6) 0%, rgba(80, 34, 90, 0.6) 99.99%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: 6px;
+    padding: 15px 13px 16px 16px;
+    color: white;
+}
+
+#building-industry ul :nth-child(1) {
+    margin-bottom: 15px;
+}
+
+#building-industry li {
+    position: relative;
+}
+
+#building-industry li::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-image:  url('../images/industries-bullet.png');
+    background-size: 40%;
+    background-position: 72%;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    left: -22px;
+    top: 0;
+}
+
+#building-dots {
+    width: 0px;
+    height: 200px;
+    border-image: linear-gradient(to bottom, #B897E6, transparent);
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-image-slice: 1;
+    border-radius: 10px;
+    position: absolute;
+    left: 34%;
+    bottom: -215.5px;
+}
+
+#darkstores-industry {
+    position: absolute;
+    top: -35%;
+    left: 60%;
+}
+
+#darkstores-heading-container {
+    height: 26px;
+    margin-bottom: 13px;
+    overflow: hidden;
+}
+
+#darkstores-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #B897E6;
+}
+
+#darkstores-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;    
+    list-style-type: none;
+    max-width: 300px;
+    background: linear-gradient(180deg, rgba(58, 19, 123, 0.6) 0%, rgba(80, 34, 90, 0.6) 99.99%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: 6px;
+    padding: 15px 13px 16px 16px;
+    color: white;
+}
+
+#darkstores-industry ul :nth-child(1) {
+    margin-bottom: 15px;
+}
+
+#darkstores-industry li {
+    position: relative;
+}
+
+#darkstores-industry li::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-image:  url('../images/industries-bullet.png');
+    background-size: 40%;
+    background-position: 72%;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    left: -22px;
+    top: 0;
+}
+
+#darkstores-dots {
+    width: 0px;
+    height: 120px;
+    border-image: linear-gradient(to bottom, #B897E6, transparent);
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-image-slice: 1;
+    border-radius: 10px;
+    position: absolute;
+    left: 34%;
+    bottom: -135.5px;
+}
+
+#agri-industry {
+    position: absolute;
+    top: -35%;
+    left: 74%;
+}
+
+#agri-heading-container {
+    height: 26px;
+    margin-bottom: 13px;
+    overflow: hidden;
+}
+
+#agri-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #B897E6;
+}
+
+#agri-content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;    
+    list-style-type: none;
+    max-width: 300px;
+    background: linear-gradient(180deg, rgba(58, 19, 123, 0.6) 0%, rgba(80, 34, 90, 0.6) 99.99%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: 6px;
+    padding: 15px 13px 16px 16px;
+    color: white;
+}
+
+#agri-industry ul :nth-child(1) {
+    margin-bottom: 15px;
+}
+
+#agri-industry li {
+    position: relative;
+}
+
+#agri-industry li::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background-image:  url('../images/industries-bullet.png');
+    background-size: 40%;
+    background-position: 72%;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    left: -22px;
+    top: 0;
+}
+
+#agri-dots {
+    width: 0px;
+    height: 200px;
+    border-image: linear-gradient(to bottom, #B897E6, transparent);
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-image-slice: 1;
+    border-radius: 10px;
+    position: absolute;
+    left: 34%;
+    bottom: -215.5px;
+}
+
+.final-restaurants-animation {
+    position: absolute;
+    top: -24%;
+    left: 2%;
+}
+
+.final-retail-animation {
+    position: absolute;
+    top: -37%;
+    left: 20%;
+}
+
+.final-bfsi-animation {
+    position: absolute;
+    top: -10%;
+    left: 34%;
+}
+
+.final-building-animation {
+    position: absolute;
+    top: 8%;
+    left: 54%;
+}
+
+.final-darkstores-animation {
+    position: absolute;
+    top: -35%;
+    left: 55%;
+}
+
+.final-agri-animation {
+    position: absolute;
+    top: -25%;
+    left: 77%;
+}
+
+.final-heading-container {
+    height: 26px;
+    margin-bottom: 13px;
+    overflow: hidden;
+}
+
+.final-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #B897E6;
+}
+
+.final-dots {
+    width: 0px;
+    height: 200px;
+    border-image: linear-gradient(to bottom, #B897E6, transparent);
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-image-slice: 1;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: -215.5px;
 }
 
 .industries-image {

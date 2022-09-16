@@ -1,5 +1,5 @@
 .solutions-section {
-     margin-bottom: 180px;
+     margin-bottom: 150px;
      position: relative;
      height: 700vh;
 }
@@ -7,7 +7,7 @@
 .solutions-sticky {
     position: sticky;
     top: 0;
-    padding-top: 10px;
+    padding-top: 35px;
 }
 
 .solutions-stick::before {
@@ -198,3 +198,26 @@
     color: #B897E6;
     background: linear-gradient(to right, #413853, #1B1924);
 }
+
+@media only screen and (min-width: 1250px) and (max-width: 1370px) {
+    .solutions-content h2 {
+        font-size: 28px;
+        margin-bottom: 40px; 
+    }
+    .solutions-content li {
+        font-size: 22px
+    }
+    
+    .solutions-content li::before {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .solutions-content li:first-child {
+        margin-bottom: 38px;
+    }
+    
+    .solutions-content li:nth-child(2) {
+        margin-bottom: 38px;
+    }
+  }

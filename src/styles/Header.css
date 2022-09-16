@@ -35,9 +35,10 @@ header img {
     transition: 0.2s;
 }
 
-/* .header-links button:hover {
-    background: #5a62f9;
-} */
+.header-links button:hover {
+    background-color: #B897E6;
+    color: white;
+}
 
 .header-links a {
     text-decoration: none;

@@ -1,9 +1,27 @@
+.client-list-container {
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
 .client-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
+    width: fit-content;
+    animation: logoAnim 10s linear infinite;
+}
+
+.client-list:hover {
+    animation-play-state: paused;
+}
+
+@keyframes logoAnim {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .client-heading {
@@ -16,18 +34,26 @@
     color: white;
 }
 
-.google {
-    width: 100px;
-    height: auto;
-    margin-right: 90px;
-    cursor: pointer;
+.client-list :nth-child(7) {
+    height: 45px;
+    width: auto;
 }
 
-.google path {
-    transition: 0.2s;
-    fill: #2F2F2F;
+.client-list :nth-child(8) {
+    height: 45px;
+    width: auto;
 }
 
-.google:hover path {
-    fill: white;
+.client-list :nth-child(15) {
+    height: 45px;
+    width: auto;
+}
+
+.client-list :nth-child(16) {
+    height: 45px;
+    width: auto;
+}
+
+.client-list img {
+    margin-right: 100px;
 }
