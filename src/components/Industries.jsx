@@ -18,17 +18,17 @@ function Industries() {
         height: "0px",
       },
       {
-        height: "200px",
+        height: "180px",
         scrollTrigger: {
           trigger: element,
           start: "top top",
-          end: "+100",
+          end: "=100",
           scrub: true,
         },
       }
     );
     gsap.fromTo(
-      element.querySelector("#restaurants-heading"),
+      element.querySelector("#restaurants-card"),
       {
         transform: "translateY(100%)",
       },
@@ -36,43 +36,13 @@ function Industries() {
         transform: "translateY(0)",
         scrollTrigger: {
           trigger: element,
-          start: "=100",
-          end: "=200",
-          scrub: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      element.querySelector("#restaurants-content"),
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: element,
-          start: "=150",
-          end: "=250",
+          start: "top top",
+          end: "=100",
           scrub: true,
         },
         onComplete: () => {
           gsap.fromTo(
-            element.querySelector("#restaurants-content"),
-            {
-              opacity: 1,
-            },
-            {
-              opacity: 0,
-              scrollTrigger: {
-                trigger: element,
-                start: "=350",
-                end: "=400",
-                scrub: true,
-              },
-            }
-          );
-          gsap.fromTo(
-            element.querySelector("#restaurants-heading"),
+            element.querySelector("#restaurants-card"),
             {
               transform: "translateY(0)",
             },
@@ -89,7 +59,7 @@ function Industries() {
           gsap.fromTo(
             element.querySelector("#restaurants-dots"),
             {
-              height: "200px",
+              height: "180px",
             },
             {
               height: "0px",
@@ -115,17 +85,17 @@ function Industries() {
         height: "0px",
       },
       {
-        height: "130px",
+        height: "180px",
         scrollTrigger: {
           trigger: element,
-          start: "=400",
-          end: "=500",
+          start: "top top",
+          end: "=100",
           scrub: true,
         },
       }
     );
     gsap.fromTo(
-      element.querySelector("#retail-heading"),
+      element.querySelector("#retail-card"),
       {
         transform: "translateY(100%)",
       },
@@ -133,43 +103,13 @@ function Industries() {
         transform: "translateY(0)",
         scrollTrigger: {
           trigger: element,
-          start: "=500",
-          end: "=600",
-          scrub: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      element.querySelector("#retail-content"),
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: element,
-          start: "=550",
-          end: "=650",
+          start: "top top",
+          end: "=100",
           scrub: true,
         },
         onComplete: () => {
           gsap.fromTo(
-            element.querySelector("#retail-content"),
-            {
-              opacity: 1,
-            },
-            {
-              opacity: 0,
-              scrollTrigger: {
-                trigger: element,
-                start: "750",
-                end: "800",
-                scrub: true,
-              },
-            }
-          );
-          gsap.fromTo(
-            element.querySelector("#retail-heading"),
+            element.querySelector("#retail-card"),
             {
               transform: "translateY(0)",
             },
@@ -177,8 +117,8 @@ function Industries() {
               transform: "translateY(100%)",
               scrollTrigger: {
                 trigger: element,
-                start: "750",
-                end: "800",
+                start: "=350",
+                end: "=400",
                 scrub: true,
               },
             }
@@ -186,14 +126,14 @@ function Industries() {
           gsap.fromTo(
             element.querySelector("#retail-dots"),
             {
-              height: "130px",
+              height: "180px",
             },
             {
               height: "0px",
               scrollTrigger: {
                 trigger: element,
-                start: "750",
-                end: "800",
+                start: "=350",
+                end: "=400",
                 scrub: true,
               },
             }
@@ -212,17 +152,17 @@ function Industries() {
         height: "0px",
       },
       {
-        height: "200px",
+        height: "180px",
         scrollTrigger: {
           trigger: element,
-          start: "=750",
-          end: "=850",
+          start: "top top",
+          end: "=100",
           scrub: true,
         },
       }
     );
     gsap.fromTo(
-      element.querySelector("#bfsi-heading"),
+      element.querySelector("#bfsi-card"),
       {
         transform: "translateY(100%)",
       },
@@ -230,43 +170,13 @@ function Industries() {
         transform: "translateY(0)",
         scrollTrigger: {
           trigger: element,
-          start: "=850",
-          end: "=950",
-          scrub: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      element.querySelector("#bfsi-content"),
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: element,
-          start: "=900",
-          end: "=1000",
+          start: "top top",
+          end: "=100",
           scrub: true,
         },
         onComplete: () => {
           gsap.fromTo(
-            element.querySelector("#bfsi-content"),
-            {
-              opacity: 1,
-            },
-            {
-              opacity: 0,
-              scrollTrigger: {
-                trigger: element,
-                start: "1100",
-                end: "1150",
-                scrub: true,
-              },
-            }
-          );
-          gsap.fromTo(
-            element.querySelector("#bfsi-heading"),
+            element.querySelector("#bfsi-card"),
             {
               transform: "translateY(0)",
             },
@@ -274,8 +184,8 @@ function Industries() {
               transform: "translateY(100%)",
               scrollTrigger: {
                 trigger: element,
-                start: "1100",
-                end: "1150",
+                start: "=350",
+                end: "=400",
                 scrub: true,
               },
             }
@@ -283,111 +193,14 @@ function Industries() {
           gsap.fromTo(
             element.querySelector("#bfsi-dots"),
             {
-              height: "200px",
+              height: "180px",
             },
             {
               height: "0px",
               scrollTrigger: {
                 trigger: element,
-                start: "1100",
-                end: "1150",
-                scrub: true,
-              },
-            }
-          );
-        },
-      }
-    );
-  }, []);
-
-  useEffect(() => {
-    const element = industriesContainer.current;
-
-    gsap.fromTo(
-      element.querySelector("#building-dots"),
-      {
-        height: "0px",
-      },
-      {
-        height: "200px",
-        scrollTrigger: {
-          trigger: element,
-          start: "=1150",
-          end: "=1250",
-          scrub: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      element.querySelector("#building-heading"),
-      {
-        transform: "translateY(100%)",
-      },
-      {
-        transform: "translateY(0)",
-        scrollTrigger: {
-          trigger: element,
-          start: "=1250",
-          end: "=1350",
-          scrub: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      element.querySelector("#building-content"),
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: element,
-          start: "=1300",
-          end: "=1400",
-          scrub: true,
-        },
-        onComplete: () => {
-          gsap.fromTo(
-            element.querySelector("#building-content"),
-            {
-              opacity: 1,
-            },
-            {
-              opacity: 0,
-              scrollTrigger: {
-                trigger: element,
-                start: "1500",
-                end: "1550",
-                scrub: true,
-              },
-            }
-          );
-          gsap.fromTo(
-            element.querySelector("#building-heading"),
-            {
-              transform: "translateY(0)",
-            },
-            {
-              transform: "translateY(100%)",
-              scrollTrigger: {
-                trigger: element,
-                start: "1500",
-                end: "1550",
-                scrub: true,
-              },
-            }
-          );
-          gsap.fromTo(
-            element.querySelector("#building-dots"),
-            {
-              height: "200px",
-            },
-            {
-              height: "0px",
-              scrollTrigger: {
-                trigger: element,
-                start: "1500",
-                end: "1550",
+                start: "=350",
+                end: "=400",
                 scrub: true,
               },
             }
@@ -409,14 +222,14 @@ function Industries() {
         height: "120px",
         scrollTrigger: {
           trigger: element,
-          start: "=1550",
-          end: "=1650",
+          start: "=450",
+          end: "=550",
           scrub: true,
         },
       }
     );
     gsap.fromTo(
-      element.querySelector("#darkstores-heading"),
+      element.querySelector("#darkstores-card"),
       {
         transform: "translateY(100%)",
       },
@@ -424,43 +237,13 @@ function Industries() {
         transform: "translateY(0)",
         scrollTrigger: {
           trigger: element,
-          start: "=1650",
-          end: "=1750",
-          scrub: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      element.querySelector("#darkstores-content"),
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: element,
-          start: "=1800",
-          end: "=1900",
+          start: "=450",
+          end: "=550",
           scrub: true,
         },
         onComplete: () => {
           gsap.fromTo(
-            element.querySelector("#darkstores-content"),
-            {
-              opacity: 1,
-            },
-            {
-              opacity: 0,
-              scrollTrigger: {
-                trigger: element,
-                start: "2000",
-                end: "2050",
-                scrub: true,
-              },
-            }
-          );
-          gsap.fromTo(
-            element.querySelector("#darkstores-heading"),
+            element.querySelector("#darkstores-card"),
             {
               transform: "translateY(0)",
             },
@@ -468,8 +251,8 @@ function Industries() {
               transform: "translateY(100%)",
               scrollTrigger: {
                 trigger: element,
-                start: "2000",
-                end: "2050",
+                start: "=800",
+                end: "=850",
                 scrub: true,
               },
             }
@@ -483,8 +266,75 @@ function Industries() {
               height: "0px",
               scrollTrigger: {
                 trigger: element,
-                start: "2000",
-                end: "2050",
+                start: "=800",
+                end: "=850",
+                scrub: true,
+              },
+            }
+          );
+        },
+      }
+    );
+  }, []);
+
+  useEffect(() => {
+    const element = industriesContainer.current;
+
+    gsap.fromTo(
+      element.querySelector("#building-dots"),
+      {
+        height: "0px",
+      },
+      {
+        height: "180px",
+        scrollTrigger: {
+          trigger: element,
+          start: "=450",
+          end: "=550",
+          scrub: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      element.querySelector("#building-card"),
+      {
+        transform: "translateY(100%)",
+      },
+      {
+        transform: "translateY(0)",
+        scrollTrigger: {
+          trigger: element,
+          start: "=450",
+          end: "=550",
+          scrub: true,
+        },
+        onComplete: () => {
+          gsap.fromTo(
+            element.querySelector("#building-card"),
+            {
+              transform: "translateY(0)",
+            },
+            {
+              transform: "translateY(100%)",
+              scrollTrigger: {
+                trigger: element,
+                start: "=800",
+                end: "=850",
+                scrub: true,
+              },
+            }
+          );
+          gsap.fromTo(
+            element.querySelector("#building-dots"),
+            {
+              height: "180px",
+            },
+            {
+              height: "0px",
+              scrollTrigger: {
+                trigger: element,
+                start: "=800",
+                end: "=850",
                 scrub: true,
               },
             }
@@ -503,17 +353,17 @@ function Industries() {
         height: "0px",
       },
       {
-        height: "200px",
+        height: "180px",
         scrollTrigger: {
           trigger: element,
-          start: "=2050",
-          end: "=2150",
+          start: "=450",
+          end: "=550",
           scrub: true,
         },
       }
     );
     gsap.fromTo(
-      element.querySelector("#agri-heading"),
+      element.querySelector("#agri-card"),
       {
         transform: "translateY(100%)",
       },
@@ -521,43 +371,13 @@ function Industries() {
         transform: "translateY(0)",
         scrollTrigger: {
           trigger: element,
-          start: "=2150",
-          end: "=2250",
-          scrub: true,
-        },
-      }
-    );
-    gsap.fromTo(
-      element.querySelector("#agri-content"),
-      {
-        opacity: 0,
-      },
-      {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: element,
-          start: "=2300",
-          end: "=2400",
+          start: "=450",
+          end: "=550",
           scrub: true,
         },
         onComplete: () => {
           gsap.fromTo(
-            element.querySelector("#agri-content"),
-            {
-              opacity: 1,
-            },
-            {
-              opacity: 0,
-              scrollTrigger: {
-                trigger: element,
-                start: "2500",
-                end: "2550",
-                scrub: true,
-              },
-            }
-          );
-          gsap.fromTo(
-            element.querySelector("#agri-heading"),
+            element.querySelector("#agri-card"),
             {
               transform: "translateY(0)",
             },
@@ -565,8 +385,8 @@ function Industries() {
               transform: "translateY(100%)",
               scrollTrigger: {
                 trigger: element,
-                start: "2500",
-                end: "2550",
+                start: "=800",
+                end: "=850",
                 scrub: true,
               },
             }
@@ -574,14 +394,14 @@ function Industries() {
           gsap.fromTo(
             element.querySelector("#agri-dots"),
             {
-              height: "200px",
+              height: "180px",
             },
             {
               height: "0px",
               scrollTrigger: {
                 trigger: element,
-                start: "2500",
-                end: "2550",
+                start: "=800",
+                end: "=850",
                 scrub: true,
               },
             }
@@ -600,11 +420,11 @@ function Industries() {
         height: "0px",
       },
       {
-        height: "200px",
+        height: "180px",
         scrollTrigger: {
           trigger: element,
-          start: "=2550",
-          end: "=2650",
+          start: "=850",
+          end: "=950",
           scrub: true,
         },
       }
@@ -618,8 +438,8 @@ function Industries() {
         transform: "translateY(0)",
         scrollTrigger: {
           trigger: element,
-          start: "=2650",
-          end: "=2750",
+          start: "=950",
+          end: "=1050",
           scrub: true,
         },
       }
@@ -632,68 +452,80 @@ function Industries() {
         <h2 className="industries-heading">Industries we serve</h2>
         <div className="industries-animation">
           <div id="restaurants-industry">
-            <div id="restaurants-heading-container">
-              <h3 id="restaurants-heading">Retail Industry</h3>
+            <div id="restaurants-card-container">
+              <div id="restaurants-card">
+                <h3 id="restaurants-heading">Multi-unit Restaurants</h3>
+                <ul id="restaurants-content">
+                  <li>Compare locations for new outlets</li>
+                  <li>Analyse sales impact on existing portfolio</li>
+                </ul>
+              </div>
             </div>
-            <ul id="restaurants-content">
-              <li>Compare locations for new outlets</li>
-              <li>Analyse sales impact on existing portfolio</li>
-            </ul>
             <div id="restaurants-dots"></div>
           </div>
           <div id="retail-industry">
-            <div id="retail-heading-container">
-              <h3 id="retail-heading">Retail Industry</h3>
+            <div id="retail-card-container">
+              <div id="retail-card">
+                <h3 id="retail-heading">Multi-unit Restaurants</h3>
+                <ul id="retail-content">
+                  <li>Compare locations for new outlets</li>
+                  <li>Analyse sales impact on existing portfolio</li>
+                </ul>
+              </div>
             </div>
-            <ul id="retail-content">
-              <li>Compare locations for new outlets</li>
-              <li>Analyse sales impact on existing portfolio</li>
-            </ul>
             <div id="retail-dots"></div>
           </div>
           <div id="bfsi-industry">
-            <div id="bfsi-heading-container">
-              <h3 id="bfsi-heading">Retail Industry</h3>
+            <div id="bfsi-card-container">
+              <div id="bfsi-card">
+                <h3 id="bfsi-heading">Multi-unit Restaurants</h3>
+                <ul id="bfsi-content">
+                  <li>Compare locations for new outlets</li>
+                  <li>Analyse sales impact on existing portfolio</li>
+                </ul>
+              </div>
             </div>
-            <ul id="bfsi-content">
-              <li>Compare locations for new outlets</li>
-              <li>Analyse sales impact on existing portfolio</li>
-            </ul>
             <div id="bfsi-dots"></div>
           </div>
           <div id="building-industry">
-            <div id="building-heading-container">
-              <h3 id="building-heading">Retail Industry</h3>
+            <div id="building-card-container">
+              <div id="building-card">
+                <h3 id="building-heading">Multi-unit Restaurants</h3>
+                <ul id="building-content">
+                  <li>Compare locations for new outlets</li>
+                  <li>Analyse sales impact on existing portfolio</li>
+                </ul>
+              </div>
             </div>
-            <ul id="building-content">
-              <li>Compare locations for new outlets</li>
-              <li>Analyse sales impact on existing portfolio</li>
-            </ul>
             <div id="building-dots"></div>
           </div>
           <div id="darkstores-industry">
-            <div id="darkstores-heading-container">
-              <h3 id="darkstores-heading">Retail Industry</h3>
+            <div id="darkstores-card-container">
+              <div id="darkstores-card">
+                <h3 id="darkstores-heading">Multi-unit Restaurants</h3>
+                <ul id="darkstores-content">
+                  <li>Compare locations for new outlets</li>
+                  <li>Analyse sales impact on existing portfolio</li>
+                </ul>
+              </div>
             </div>
-            <ul id="darkstores-content">
-              <li>Compare locations for new outlets</li>
-              <li>Analyse sales impact on existing portfolio</li>
-            </ul>
             <div id="darkstores-dots"></div>
           </div>
           <div id="agri-industry">
-            <div id="agri-heading-container">
-              <h3 id="agri-heading">Retail Industry</h3>
+            <div id="agri-card-container">
+              <div id="agri-card">
+                <h3 id="agri-heading">Multi-unit Restaurants</h3>
+                <ul id="agri-content">
+                  <li>Compare locations for new outlets</li>
+                  <li>Analyse sales impact on existing portfolio</li>
+                </ul>
+              </div>
             </div>
-            <ul id="agri-content">
-              <li>Compare locations for new outlets</li>
-              <li>Analyse sales impact on existing portfolio</li>
-            </ul>
             <div id="agri-dots"></div>
           </div>
           <div className="final-restaurants-animation">
             <div className="final-heading-container">
-              <h3 className="final-heading">Muilti-unit Restaurants</h3>
+              <h3 className="final-heading">Multi-unit Restaurants</h3>
             </div>
             <div className="final-dots"></div>
           </div>
@@ -718,14 +550,14 @@ function Industries() {
           <div className="final-darkstores-animation">
             <div className="final-heading-container">
               <h3 className="final-heading">
-                Darkstores & Micro-filfillment Centers
+                Darkstores & Micro-fulfillment Centers
               </h3>
             </div>
             <div className="final-dots"></div>
           </div>
           <div className="final-agri-animation">
             <div className="final-heading-container">
-              <h3 className="final-heading">Agri Infra</h3>
+              <h3 className="final-heading">Agri-Infra</h3>
             </div>
             <div className="final-dots"></div>
           </div>

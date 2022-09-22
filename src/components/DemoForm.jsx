@@ -6,7 +6,15 @@ import { useState } from "react";
 function DemoForm(props) {
   const [submit, setSubmit] = useState(false);
   const [submitButton, setSubmitButton] = useState(false);
-  const [demoData, setDemoData] = useState(true);
+  const [demoData, setDemoData] = useState({
+    fname: '',
+    lname: '',
+    company: '',
+    email: '',
+    pnumber: '',
+    teams: ''
+  });
+  const [selectOpen, setSelectOpen] = useState(false);
 
   useEffect(() => {
     if (
@@ -33,11 +41,26 @@ function DemoForm(props) {
         [name]: value,
       };
     });
+    console.log(demoData);
   }
 
   function handleSubmit(e) {
     e.preventDefault();
     setSubmit(true);
+  }
+
+  function selectOption(e) {
+    setDemoData((pValue) => {
+      return {
+        ...pValue,
+        teams: e.target.innerText
+      };
+    });
+    setSelectOpen(false);
+  }
+
+  function openSelect() {
+    setSelectOpen(true);
   }
 
   const windowAnim = {
@@ -140,15 +163,32 @@ function DemoForm(props) {
                   <div className="form-field">
                     <h3>Team</h3>
                     <div className="select-menu">
-                      <input type="text" />
-                      <ul>
-                        <li>Sales</li>
-                        <li>Marketing</li>
-                        <li>Strategy</li>
-                        <li>Operations</li>
-                        <li>Data Science</li>
-                        <li>Others</li>
-                      </ul>
+                      <div className="input-icon">
+                        <input
+                          disabled
+                          className="select-input"
+                          placeholder="Select a team"
+                          value={demoData.teams}
+                          type="text"
+                          name="teams"
+                        />
+                        <span onClick={openSelect} className="dropdown">
+                          <img
+                            src={require("../images/form-dropdown.png")}
+                            alt=""
+                          />
+                        </span>
+                      </div>
+                      {selectOpen && (
+                        <ul>
+                          <li onClick={selectOption}>Sales</li>
+                          <li onClick={selectOption}>Marketing</li>
+                          <li onClick={selectOption}>Strategy</li>
+                          <li onClick={selectOption}>Operations</li>
+                          <li onClick={selectOption}>Data Science</li>
+                          <li onClick={selectOption}>Others</li>
+                        </ul>
+                      )}
                     </div>
                   </div>
                 </div>

@@ -207,8 +207,29 @@
     font-size: 19px;    
     max-width: 838px;
   }
+  .colored-text {
+    font-size: 23px;
+  }
   .banner-content button {
     font-size: 18px;
     margin-top: 10px;
   }
+}
+
+@media only screen and (max-height: 690px) {
+  .banner-content h1 {
+    margin-bottom: 19px;
+  }
+  .banner {
+    padding-top: 100px;
+  }
+  .banner-content button {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .banner {
+    padding-top: 80px;
+}
 }

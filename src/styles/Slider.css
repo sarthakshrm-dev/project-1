@@ -175,7 +175,7 @@
     margin-left: 28px;
 }
 
-.slider-link {
+.slider-link button {
     font-size: 24px;
     font-weight: 500;
     line-height: 29px;
@@ -184,7 +184,7 @@
     margin-left: 28px;
 }
 
-.slider-link a::before {
+.slider-link button::before {
     content: "";
     position: absolute;
     right: -43px;
@@ -196,14 +196,17 @@
     transition: 0.2s;
 }
 
-.slider-link a:hover::before {
+.slider-link button:hover::before {
     right: -60px;
 }
 
-.slider-link a {
+.slider-link button {
     text-decoration: none;
     color: #B897E6;
     position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 span.swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -225,4 +228,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0px 10px;
+}
+
+@media only screen and (max-width: 690px) {
+    .carousel {
+        height: 500px;
+    }
+    .slider-section-heading {
+        margin-bottom: 0px;
+    }
 }

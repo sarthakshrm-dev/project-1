@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DemoForm from "./DemoForm";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Pagination, EffectCoverflow } from "swiper";
 import "swiper/css";
@@ -40,6 +41,11 @@ function Slider() {
       image: "../images/Slider/06-TD.png",
     },
   ]);
+  const [demo, setDemo] = useState(false);
+
+  function handleClick() {
+    setDemo(true);
+  }
 
   return (
     <section className="slider-section" id="data">
@@ -78,7 +84,7 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <a href="">Request a demo</a>
+                <button onClick={handleClick}>Request a demo</button>
               </p>
             </div>
           </SwiperSlide>
@@ -91,7 +97,7 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <a href="">Request a demo</a>
+                <button onClick={handleClick}>Request a demo</button>
               </p>
             </div>
           </SwiperSlide>
@@ -104,7 +110,7 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <a href="">Request a demo</a>
+                <button onClick={handleClick}>Request a demo</button>
               </p>
             </div>
           </SwiperSlide>
@@ -117,7 +123,7 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <a href="">Request a demo</a>
+                <button onClick={handleClick}>Request a demo</button>
               </p>
             </div>
           </SwiperSlide>
@@ -130,7 +136,7 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <a href="">Request a demo</a>
+                <button onClick={handleClick}>Request a demo</button>
               </p>
             </div>
           </SwiperSlide>
@@ -143,12 +149,13 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <a href="">Request a demo</a>
+                <button onClick={handleClick}>Request a demo</button>
               </p>
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
+      {demo && <DemoForm setDemo={setDemo} />}
     </section>
   );
 }

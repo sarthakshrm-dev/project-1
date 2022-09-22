@@ -1,7 +1,7 @@
 .industries-section {
     margin-bottom: 66px;
     color: white;
-    height: 3750px;
+    height: 2000px;
 }
 
 .industries-sticky {
@@ -26,8 +26,8 @@
 
 #retail-industry {
     position: absolute;
-    top: -37%;
-    left: 16%;
+    top: -18%;
+    left: 36%;
 }
 
 #retail-heading-container {
@@ -82,7 +82,6 @@
 
 #retail-dots {
     width: 0px;
-    height: 130px;
     border-image: linear-gradient(to bottom, #B897E6, transparent);
     border-left-width: 3px;
     border-left-style: solid;
@@ -90,18 +89,42 @@
     border-radius: 10px;
     position: absolute;
     left: 34%;
-    bottom: -145.5px;
+    bottom: -195.5px;
 }
 
 #restaurants-industry {
     position: absolute;
-    top: -36%;
-    left: 2%;
+    top: -30%;
+    left: 2.5%;
 }
 
 #restaurants-heading-container {
     height: 26px;
     margin-bottom: 13px;
+    overflow: hidden;
+}
+
+#restaurants-card-container {
+    overflow: hidden;
+}
+
+#retail-card-container {
+    overflow: hidden;
+}
+
+#bfsi-card-container {
+    overflow: hidden;
+}
+
+#building-card-container {
+    overflow: hidden;
+}
+
+#darkstores-card-container {
+    overflow: hidden;
+}
+
+#agri-card-container {
     overflow: hidden;
 }
 
@@ -159,13 +182,13 @@
     border-radius: 10px;
     position: absolute;
     left: 34%;
-    bottom: -215.5px;
+    bottom: -195.5px;
 }
 
 #bfsi-industry {
     position: absolute;
-    top: -24%;
-    left: 29%;
+    top: -30%;
+    left: 70%;
 }
 
 #bfsi-heading-container {
@@ -228,13 +251,13 @@
     border-radius: 10px;
     position: absolute;
     left: 34%;
-    bottom: -215.5px;
+    bottom: -195.5px;
 }
 
 #building-industry {
     position: absolute;
-    top: -8%;
-    left: 53%;
+    top: 0%;
+    left: 45%;
 }
 
 #building-heading-container {
@@ -297,13 +320,13 @@
     border-radius: 10px;
     position: absolute;
     left: 34%;
-    bottom: -215.5px;
+    bottom: -195.5px;
 }
 
 #darkstores-industry {
     position: absolute;
-    top: -35%;
-    left: 60%;
+    top: -34%;
+    left: 16%;
 }
 
 #darkstores-heading-container {
@@ -371,8 +394,8 @@
 
 #agri-industry {
     position: absolute;
-    top: -35%;
-    left: 74%;
+    top: -33%;
+    left: 66%;
 }
 
 #agri-heading-container {
@@ -435,43 +458,43 @@
     border-radius: 10px;
     position: absolute;
     left: 34%;
-    bottom: -215.5px;
+    bottom: -195.5px;
 }
 
 .final-restaurants-animation {
     position: absolute;
-    top: -24%;
+    top: -21%;
     left: 2%;
 }
 
 .final-retail-animation {
     position: absolute;
-    top: -37%;
+    top: -34%;
     left: 20%;
 }
 
 .final-bfsi-animation {
     position: absolute;
-    top: -10%;
+    top: -7%;
     left: 34%;
 }
 
 .final-building-animation {
     position: absolute;
-    top: 8%;
-    left: 54%;
+    top: 11%;
+    left: 45%;
 }
 
 .final-darkstores-animation {
     position: absolute;
-    top: -35%;
+    top: -27%;
     left: 55%;
 }
 
 .final-agri-animation {
     position: absolute;
-    top: -25%;
-    left: 77%;
+    top: -22%;
+    left: 79%;
 }
 
 .final-heading-container {
@@ -498,7 +521,7 @@
     border-radius: 10px;
     position: absolute;
     left: 50%;
-    bottom: -215.5px;
+    bottom: -195.5px;
 }
 
 .industries-image {
@@ -513,4 +536,134 @@
     z-index: 1;
     position: absolute;
     top: 0;
+}
+
+@media only screen and (max-height: 640px) {
+    .industries-sticky {
+        padding-top: 20px;
+    }
+    .industries-heading {
+        margin-bottom: 190px;
+    }
+    .final-dots {
+        height: 160px;
+    }
+    #retail-heading-container {
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    #retail-heading {
+        font-size: 18px;
+    }
+    #retail-content {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    #retail-industry ul :nth-child(1) {
+        margin-bottom: 13px;
+    }
+    #restaurants-heading-container {
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    #restaurants-heading {
+        font-size: 18px;
+    }
+    #restaurants-content {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    #restaurants-industry ul :nth-child(1) {
+        margin-bottom: 13px;
+    }
+    #bfsi-heading-container {
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    #bfsi-heading {
+        font-size: 18px;
+    }
+    #bfsi-content {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    #bfsi-industry ul :nth-child(1) {
+        margin-bottom: 13px;
+    }
+    #building-heading-container {
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    #building-heading {
+        font-size: 18px;
+    }
+    #building-content {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    #building-industry ul :nth-child(1) {
+        margin-bottom: 13px;
+    }
+    #darkstores-heading-container {
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    #darkstores-heading {
+        font-size: 18px;
+    }
+    #darkstores-content {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    #darkstores-industry ul :nth-child(1) {
+        margin-bottom: 13px;
+    }
+    #agri-heading-container {
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    #agri-heading {
+        font-size: 18px;
+    }
+    #agri-content {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    #agri-industry ul :nth-child(1) {
+        margin-bottom: 13px;
+    }
+}
+@media only screen and (max-width: 1370px) {
+    #restaurants-dots {
+        left: 28%;
+    }
+    #retail-dots {
+        left: 30%;
+    }
+    #bfsi-dots {
+        left: 30%;
+    }
+    #building-dots {
+        left: 30%;
+    }
+    #darkstores-dots {
+        left: 30%;
+    }
+    #agri-dots {
+        left: 30%;
+    }
+}
+@media only screen and (max-width: 1360px) {
+    #building-industry {
+        top: -5%;
+    }
+    #bfsi-industry {
+        top: -30%;
+    }
+    #agri-industry {
+        top: -36%;
+    }
+    #retail-industry {
+        top: -23%;
+    }
 }

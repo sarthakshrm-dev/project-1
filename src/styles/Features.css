@@ -41,7 +41,7 @@
     color: white;
 }
 
-.features-options a {
+.features-options button {
     display: inline-block;
     font-size: 24px;
     font-weight: 500;
@@ -55,9 +55,12 @@
     text-decoration: none;
     transition: 0.2s;
     position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-.features-options a::after {
+.features-options button::after {
     content: "";
     position: absolute;
     right: -43px;
@@ -69,7 +72,7 @@
     transition: 0.2s;
 }
 
-.features-options a:hover::after {
+.features-options button:hover::after {
     right: -60px;
 }
 
@@ -474,7 +477,7 @@
         height: 44px;
     }
     
-    .feature-active > .feature-icon1 {
+    .feature1-active > .feature-icon1 {
         width: 44px;
         height: 44px;
     }
@@ -492,5 +495,24 @@
     .feature-active > .feature-icon4 {
         width: 44px;
         height: 44px;
+    }
+
+    .feature1 {
+        font-size: 22px;
+    }
+    .feature2 {
+        font-size: 22px;
+    }
+    .feature3 {
+        font-size: 22px;
+    }
+    .feature4 {
+        font-size: 22px;
+    }
+    .feature1-active {
+        font-size: 22px;
+    }
+    .feature-active {
+        font-size: 22px;
     }
   }

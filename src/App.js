@@ -8,13 +8,11 @@ import Solutions from "./components/Solutions"
 import Industries from "./components/Industries";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
-import ChatBot from "./components/ChatBot/ChatBot.jsx";
 
 function App() {
     return(
         <BrowserRouter>
             <Header />
-            {/* <Banner /> */}
             <Banner />
             <Features />
             <Solutions />

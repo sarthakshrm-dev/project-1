@@ -2,6 +2,15 @@ import React from "react";
 import "../styles/Footer.css";
 
 function Footer() {
+
+  function twitterClick() {
+    window.open('https://twitter.com/sociometrik_org')
+  }
+
+  function linkedinClick() {
+    window.open('https://www.linkedin.com/company/sociometrik/')
+  }
+
   return (
     <footer>
       <img src={require("../images/logo.png")} alt="logo" />
@@ -30,8 +39,8 @@ function Footer() {
         <div className="footer-links">
           <h4>Reach out to us:</h4>
           <div className="social-links">
-            <button id="twitter"></button>
-            <button id="linkedin"></button>
+            <button onClick={twitterClick} id="twitter"></button>
+            <button onClick={linkedinClick} id="linkedin"></button>
           </div>
         </div>
       </div>
