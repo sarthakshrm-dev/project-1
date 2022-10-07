@@ -1,91 +1,301 @@
 .banner {
-    padding-top: 57px;
-    padding-left: 63px;
-    height: 386px;
-    margin-bottom: 177px;
-    display: flex;
+    padding-top: 113px;
+    margin-bottom: 92px;
+    position: relative;
 }
 
-.background-image {
-    background-image: url('../images/video-backdrop.png');
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: 100%;
-    width: 843px;
-    height: 460px;
+.banner-image {
     position: absolute;
-    top: 0;
-    right: 0;
+    left: 0;
+    top: -32px;
+    height: 100%;
+    width: auto;
     z-index: -1;
 }
 
+.banner-desc-mobile {
+  display: none;
+}
+
+.banner-desc-pc {
+  display: inline-block;
+}
+
+.banner-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .banner-content button {
-    width: 227px;
-    height: 62px;
-    background: rgba(184, 151, 230, 1);
-    border-radius: 6px;
-    color: white;
+    padding: 14px 25px 17px 29px;
+    background-color: transparent;
+    border: 1px solid #B897E6;
+    border-radius: 8px;
+    color: #B897E6;
+    font-size: 22px;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+    line-height: 27px;
+    letter-spacing: 0em;    
+    margin-bottom: 116px;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .banner-content button:hover {
-    background: #5a62f9;
+  background-color: #B897E6;
+  color: white;
 }
 
 .banner-content p {
-    max-width: 623px;
-    max-height: 145px;
+    font-size: 22px;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #686868;
-    margin-bottom: 41px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;    
+    max-width: 986px;
+    color: white;
+    margin-bottom: 29px;
+}
+
+.colored-text {
+  background-color: #B897E6;
+  color: white;
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 26px;
+  font-weight: 500;
 }
 
 .banner-content h1 {
+    font-size: 40px;
     font-weight: 500;
-    font-size: 42px;
     line-height: 51px;
+    letter-spacing: 0em;
+    margin: auto;    
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.play-btn {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.banner-text-rotation-container {
+    height: 60px;
+    width: fit-content;
+    display: inline-flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: left;
+    color: #B897E6;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+  }
+
+  .banner-rotating-text{
+    height: 100%;
+    animation: textAnimation 10s infinite ;
+    animation-direction: alternate;
+    animation-delay: 1s;
+  }
+  
+  @keyframes textAnimation {
+    0%{
+      transform: translateY(0%);
+    }
+    15%{
+      transform: translateY(0%);
+    }
+    17%{
+      transform: translateY(-100%);
+    }
+    34%{
+      transform: translateY(-100%);
+    }
+    36%{
+      transform: translateY(-200%);
+    }
+    51%{
+      transform: translateY(-200%);
+    }
+    53%{
+      transform: translateY(-300%);
+    }
+    68%{
+      transform: translateY(-300%);
+    }
+    70%{
+      transform: translateY(-400%);
+    }
+    85%{
+      transform: translateY(-400%);
+    }
+    87%{
+      transform: translateY(-500%);
+    }
+    100%{
+      transform: translateY(-500%);
+    }          
+  }
+
+.banner-background-dots-container {
     position: absolute;
-    right: 291px;
-    top: 220px;
-    cursor: pointer;
-}
-
-.play-btn-back {
+    top: 0;
+    left: 0;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    background: rgba(184, 151, 230, 1);
-    mix-blend-mode: normal;
-    opacity: 0.4;
+}
+
+.banner-background-dot {
+    width: 26px;
+    height: 26px;
+    background: #000000;
+    box-shadow: inset 0px 0px 10px 2px rgba(184, 151, 230, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    z-index: 1;
-    transition: 0.3s;
 }
 
-.play-btn:hover > .play-btn-back {
-    background: #5a62f9;
+.inner-dot {
+    width: 8px;
+    height: 8px;
+    background: #B897E6;
+    border-radius: 50%;
 }
 
-.play-btn img {
-    width: 39%;
-    height: 46%;
+.dot-1 {
     position: absolute;
-    top: 27px; 
-    right: 27px;
-    bottom: 34px;
-    left: 34px;
-    z-index: 2;
+    top: 7%;
+    left: 44%;
+}
+
+.dot-2 {
+  position: absolute;
+  top: 9%;
+  left: 60%;
+}
+
+.dot-3 {
+  position: absolute;
+  top: 15%;
+  left: 73%;
+}
+
+.dot-4 {
+  position: absolute;
+  top: 62%;
+  left: 68%;
+}
+
+.dot-5 {
+  position: absolute;
+  top: 11%;
+  left: 90%;
+}
+
+.dot-6 {
+  position: absolute;
+  top: 31%;
+  left: 41%;
+}
+
+.dot-7 {
+  position: absolute;
+  top: 49%;
+  left: 51.5%;
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1370px) {
+  .banner-content h1 {
+    font-size: 32px;
+  }
+  .banner-text-rotation-container {
+    font-size: 32px;
+  }
+  .banner-content p {
+    font-size: 19px;    
+    max-width: 838px;
+  }
+  .colored-text {
+    font-size: 23px;
+  }
+  .banner-content button {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-height: 690px) {
+  .banner-content h1 {
+    margin-bottom: 19px;
+  }
+  .banner {
+    padding-top: 100px;
+  }
+  .banner-content button {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .banner {
+    padding-top: 80px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-image {
+    left: -34px;
+    top: -36px;
+    height: 63%;
+  }
+
+  .banner-content h1 {
+    font-size: 20px;
+    line-height: 27px;
+    max-width: 85vw;
+  }
+
+  .banner-rotating-text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .banner-text-rotation-container {
+    height: 27px;
+  }
+  .banner-content p {
+    font-size: 14px;
+    line-height: 16.7px;
+    max-width: 82vw;
+  }
+  .colored-text {
+    font-size: 14px;
+    line-height: 16.7px;
+    background-color: #B897E6;
+  }
+  .banner {
+    padding-top: 53px;
+    margin-bottom: 73px;
+  }
+  .banner-content button {
+    background-color: #B897E6;
+    color: white;
+    padding: 14px 41px 14px 42px;
+    font-size: 16px;
+    line-height: 19.54px;
+    margin-bottom: 49px;
+  }
+  .banner-desc-pc {
+    display: none;
+  }
+  .banner-desc-mobile {
+    display: inline-block;
+  }
+  .banner-desc-mobile a {
+    text-decoration: underline;
+    color: #B897E6;
+    margin-left: 5px;
+  }
 }
