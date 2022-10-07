@@ -34,8 +34,8 @@
 
 .close-button {
     position: absolute;
-    right: 5px;
-    top: -43px;
+    right: 20px;
+    top: 20;
     cursor: pointer;
 }
 
@@ -213,4 +213,57 @@
     letter-spacing: 0em;    
     margin-top: 0px;
     cursor: pointer;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .demo-form {
+        width: 90vw;
+        height: 80vh!important;
+        /* height: fit-content!important; */
+        padding-bottom: 27px;
+        overflow: scroll;
+    }
+    .demo-form h2 {
+        margin-bottom: 20px;
+    }
+    .demo-form button {
+        margin-top: 20px;
+    }
+    .form-grid {
+        display: flex;
+        flex-direction: column;
+        width:85%;
+    }
+    .demo-form input {
+        width: 100%;
+    }
+    .form-field {
+        width: 100%;
+    }
+    .demo-form h2 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .close-button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    .form-submitted p {
+        color: white;
+        max-width: 430px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0em; 
+        text-align: center;
+        margin-bottom: 23px;
+        max-width: 260px;
+    }
+    .form-grid {
+        grid-row-gap: 1.4rem!important;
+    }
 }

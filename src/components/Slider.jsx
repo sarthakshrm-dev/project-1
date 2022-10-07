@@ -11,17 +11,17 @@ function Slider() {
 
   const [cards] = useState([
     {
-      title: "Smartphone mobility & usage",
-      desc: "Location trails, APP usage, Phone models, Travel destinations",
+      title: "Smartphone usage",
+      desc: "Mobility patterns, APP usage, Smartphone models, Travel destinations, Brand affinity",
       image: "../images/Slider/01-SMU.png",
     },
     {
-      title: "Satelite imagery",
-      desc: "Built-up, Nightlights, Green cover, Emissions",
+      title: "Satellite imagery",
+      desc: "Built-up, Nightlights, Green cover, Emissions, Construction hotspots, Road network",
       image: "../images/Slider/02-SI.png",
     },
     {
-      title: "Govt. surveys & Administrative data",
+      title: "Administrative data",
       desc: "Census, Income & Expenditure surveys, Govt. schemes, MIS data",
       image: "../images/Slider/03-GSA.png",
     },
@@ -32,12 +32,12 @@ function Slider() {
     },
     {
       title: "Establishment data",
-      desc: "Business centers, Commute stations, Recreation spots, F&B outlets, Retail outlets",
+      desc: "Business centers, Commute stations, Recreation spots, F&B outlets, Retail outlets, Convenience stores",
       image: "../images/Slider/05-ED.png",
     },
     {
       title: "Transaction data",
-      desc: "Digital payments volume & value, POS transactions",
+      desc: "Digital payments volume, Digital payments value, POS transactions",
       image: "../images/Slider/06-TD.png",
     },
   ]);
@@ -50,7 +50,7 @@ function Slider() {
   return (
     <section className="slider-section" id="data">
       <h2 className="slider-section-heading">
-        Data plugs helping your business
+        Multi-channel Data sources
       </h2>
       <div className="carousel">
         <Swiper
@@ -84,7 +84,7 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <button onClick={handleClick}>Request a demo</button>
+                <button onClick={handleClick}>Request Demo</button>
               </p>
             </div>
           </SwiperSlide>
@@ -97,7 +97,7 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <button onClick={handleClick}>Request a demo</button>
+                <button onClick={handleClick}>Request Demo</button>
               </p>
             </div>
           </SwiperSlide>
@@ -110,7 +110,7 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <button onClick={handleClick}>Request a demo</button>
+                <button onClick={handleClick}>Request Demo</button>
               </p>
             </div>
           </SwiperSlide>
@@ -123,7 +123,7 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <button onClick={handleClick}>Request a demo</button>
+                <button onClick={handleClick}>Request Demo</button>
               </p>
             </div>
           </SwiperSlide>
@@ -136,7 +136,7 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <button onClick={handleClick}>Request a demo</button>
+                <button onClick={handleClick}>Request Demo</button>
               </p>
             </div>
           </SwiperSlide>
@@ -149,7 +149,7 @@ function Slider() {
                 <br></br>+More
               </p>
               <p className="slider-link">
-                <button onClick={handleClick}>Request a demo</button>
+                <button onClick={handleClick}>Request Demo</button>
               </p>
             </div>
           </SwiperSlide>

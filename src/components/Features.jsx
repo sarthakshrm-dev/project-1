@@ -1,12 +1,67 @@
 import React, { useRef, useState } from "react";
 import DemoForm from "./DemoForm";
 import "../styles/Features.css";
+import { useEffect } from "react";
 
 function Features() {
   const [feature, setFeature] = useState(1);
   const [image, setImage] = useState(1)
   const [demo, setDemo] = useState(false);
+  const [refresh, setRefresh] = useState(true)
+  const [auto, setAuto] = useState(true)
+  const [time, setTime] = useState()
   const siteMock = useRef(null);
+
+  useEffect(() => {
+      if(auto===true) {
+          setTime(setTimeout(() => {
+            if(feature===1) {
+              siteMock.current?.classList.add("fade");
+              setFeature(2)
+              setTimeout(() => {
+                setImage(2)
+              }, 300);
+              setTimeout(() => {
+                siteMock.current?.classList.remove("fade");
+              }, 600);
+              setRefresh(!refresh)
+            }
+            else if(feature===2) {
+              siteMock.current?.classList.add("fade");
+              setFeature(3)
+              setTimeout(() => {
+                setImage(3)
+              }, 300);
+              setTimeout(() => {
+                siteMock.current?.classList.remove("fade");
+              }, 600);
+              setRefresh(!refresh)
+            }
+            else if(feature===3) {
+              siteMock.current?.classList.add("fade");
+              setFeature(4)
+              setTimeout(() => {
+                setImage(4)
+              }, 300);
+              setTimeout(() => {
+                siteMock.current?.classList.remove("fade");
+              }, 600);
+              setRefresh(!refresh)
+            }
+            else if(feature===4) {
+              siteMock.current?.classList.add("fade");
+              setFeature(1)
+              setTimeout(() => {
+                setImage(1)
+              }, 300);
+              setTimeout(() => {
+                siteMock.current?.classList.remove("fade");
+              }, 600);
+              setRefresh(!refresh)
+            }
+          }, 3000))
+      }
+  }, [refresh])
 
   function demoForm() {
     setDemo(true);
@@ -14,6 +69,14 @@ function Features() {
 
   function handleClick(e) {
     if (e.target.className === "feature1") {
+      setAuto(false)
+      clearTimeout(time)
+      setTimeout(() => {
+        setAuto(true)
+        setRefresh(!refresh)
+        console.log(auto);
+        console.log(refresh);
+      }, 7000)
       siteMock.current?.classList.add("fade");
       setFeature(1)
       setTimeout(() => {
@@ -23,6 +86,14 @@ function Features() {
         siteMock.current?.classList.remove("fade");
       }, 600);
     } else if (e.target.className === "feature2") {
+      setAuto(false)
+      clearTimeout(time)
+      setTimeout(() => {
+        setAuto(true)
+        setRefresh(!refresh)
+        console.log(auto);
+        console.log(refresh);
+      }, 7000)
       siteMock.current?.classList.add("fade");
       setFeature(2)
       setTimeout(() => {
@@ -32,6 +103,14 @@ function Features() {
         siteMock.current?.classList.remove("fade");
       }, 600);
     } else if (e.target.className === "feature3") {
+      setAuto(false)
+      clearTimeout(time)
+      setTimeout(() => {
+        setAuto(true)
+        setRefresh(!refresh)
+        console.log(auto);
+        console.log(refresh);
+      }, 7000)
       siteMock.current?.classList.add("fade");
       setFeature(3)
       setTimeout(() => {
@@ -41,6 +120,14 @@ function Features() {
         siteMock.current?.classList.remove("fade");
       }, 600);
     } else if (e.target.className === "feature4") {
+      setAuto(false)
+      clearTimeout(time)
+      setTimeout(() => {
+        setAuto(true)
+        setRefresh(!refresh)
+        console.log(auto);
+        console.log(refresh);
+      }, 7000)
       siteMock.current?.classList.add("fade");
       setFeature(4)
       setTimeout(() => {
@@ -84,7 +171,7 @@ function Features() {
                 >
                   <div className="feature-icon4"></div>Site Selection
                 </div>
-                <button onClick={demoForm}>Request for a demo</button>
+                <button onClick={demoForm}>Request Demo</button>
               </div>
             </div>
             <div ref={siteMock} className="site-mockup">
@@ -110,6 +197,7 @@ function Features() {
               />
               <div className="site-mockup-gradient"></div>
             </div>
+            <button className="features-demo-mobile" onClick={demoForm}>Request Demo</button>
           </div>
         </div>
       </div>

@@ -1,7 +1,11 @@
 .industries-section {
     margin-bottom: 66px;
     color: white;
-    height: 2000px;
+    height: 1300px;
+}
+
+.mobile-animation {
+    display: none;
 }
 
 .industries-sticky {
@@ -665,5 +669,100 @@
     }
     #retail-industry {
         top: -23%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .industries-section {
+        margin-top: -10vh;
+        margin-bottom: 55px;
+    }
+    .industries-sticky {
+        padding-top: 60px;
+    }
+    .industries-heading {
+        margin-bottom: 305px;;
+    }
+    .pc-animation {
+        display: none;
+    }
+    .final-dot {
+        height: 300px;
+        border-image: linear-gradient(to bottom, #B897E6, transparent);
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-image-slice: 1;
+        border-radius: 10px;
+        position: absolute;
+        top: -250px;
+        left: 15%;
+        display: block;
+    }
+    .mobile-animation {
+        display: block;
+    }
+    .mobile-restaurant-heading {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;   
+        margin-bottom: 18px;     
+    }
+    .mobile-retail-heading {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;   
+        margin-bottom: 18px;        
+    }
+    .mobile-bfsi-heading {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em; 
+        margin-bottom: 18px;          
+    }
+    .mobile-darkstores-heading {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;   
+        margin-bottom: 18px;        
+    }
+    .mobile-building-heading {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        margin-bottom: 18px;           
+    }
+    .mobile-agri-heading {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;        
+    }
+    .mobile-content {
+        position: absolute;
+        top: -145%;
+        left: 20%;
+        color: #B897E6;
+    }
+    .final-container {
+        height: 18px;
+        overflow: hidden;
+        margin-bottom: 19px;
+    }
+    .industries-heading {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .industries-section {
+        height: fit-content;
+    }
+    
+    .industries-sticky {
+        position: relative;
     }
 }

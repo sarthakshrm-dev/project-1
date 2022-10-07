@@ -108,7 +108,7 @@ function DemoForm(props) {
             </div>
           ) : (
             <>
-              <h2>Kindly provide the following details</h2>
+              <h2>See Sociometrik Live</h2>
               <form onSubmit={handleSubmit}>
                 <div className="form-grid">
                   <div className="form-field">

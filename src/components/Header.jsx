@@ -27,7 +27,7 @@ function Header() {
           <Link to="#data" smooth>
             Data
           </Link>
-          <button onClick={handleClick}>Get a Demo</button>
+          <button onClick={handleClick}>Request Demo</button>
         </div>
       </header>
       {demo && <DemoForm setDemo={setDemo} />}

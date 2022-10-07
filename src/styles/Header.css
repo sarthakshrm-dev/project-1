@@ -8,10 +8,10 @@ header {
 }
 
 header img {
-    height: 67px;
+    height: 120px;
     width: auto;
-    margin-left: 38px;
-    margin-top: 8px;
+    /* margin-left: 38px; */
+    /* margin-top: 8px; */
     margin-bottom: 5px;
 }
 
@@ -68,4 +68,27 @@ header img {
 
 .header-links a:hover {
     color: rgb(220, 220, 220);
+}
+
+@media only screen and (max-width: 600px) {
+    .header-links a {
+        display: none;
+    }
+
+    .header-links button {
+        display: none;
+    }
+
+    header img {
+        height: 90px;
+        width: auto;
+        margin-left:-30px;
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+
+    header {
+        padding-top: 5px;
+        height: fit-content;
+    }
 }

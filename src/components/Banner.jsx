@@ -6,9 +6,14 @@ import { useState } from "react";
 
 function Banner() {
   const [demo, setDemo] = useState(false);
+  const [expand, setExpand] = useState(false)
 
   function handleClick() {
     setDemo(true);
+  }
+
+  function handleExpand() {
+    setExpand(true)
   }
 
   return (
@@ -31,7 +36,7 @@ function Banner() {
               <span class="banner-rotating-text">Retail Consultants</span>
             </span>
           </h1>
-          <p>
+          <p className="banner-desc-pc">
             <span className="colored-text">Sociometrik LIVE</span> is a modern
             data intelligence platform to enable effective location decisions
             for your enterprise needs. Leverage 100s of data sources to expand
@@ -39,7 +44,20 @@ function Banner() {
             stores or distributors, estimate demand potential for your product
             category and analyze location specific risks and opportunities.
           </p>
-          <button onClick={handleClick}>Request for a demo</button>
+          {expand===false && <p className="banner-desc-mobile">
+            <span className="colored-text">Sociometrik LIVE</span> is a modern
+            data intelligence platform to enable effective location decisions
+            for your enterprise needs. Leverage 100s...<a onClick={handleExpand}>read more</a>
+          </p>}
+          {expand===true && <p className="banner-desc-mobile">
+            <span className="colored-text">Sociometrik LIVE</span> is a modern
+            data intelligence platform to enable effective location decisions
+            for your enterprise needs. Leverage 100s of data sources to expand
+            and optimize your offline sales network, pick ideal sites for your
+            stores or distributors, estimate demand potential for your product
+            category and analyze location specific risks and opportunities.
+          </p>}
+          <button onClick={handleClick}>Request Demo</button>
         </div>
         <div className="banner-background-dots-container">
           <div className="banner-background-dot dot-1">

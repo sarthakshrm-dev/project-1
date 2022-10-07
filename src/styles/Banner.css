@@ -13,6 +13,14 @@
     z-index: -1;
 }
 
+.banner-desc-mobile {
+  display: none;
+}
+
+.banner-desc-pc {
+  display: inline-block;
+}
+
 .banner-content {
     width: 100%;
     display: flex;
@@ -52,7 +60,10 @@
 }
 
 .colored-text {
-  color: #B897E6;
+  background-color: #B897E6;
+  color: white;
+  padding: 2px;
+  border-radius: 4px;
   font-size: 26px;
   font-weight: 500;
 }
@@ -232,4 +243,59 @@
   .banner {
     padding-top: 80px;
 }
+}
+
+@media only screen and (max-width: 600px) {
+  .banner-image {
+    left: -34px;
+    top: -36px;
+    height: 63%;
+  }
+
+  .banner-content h1 {
+    font-size: 20px;
+    line-height: 27px;
+    max-width: 85vw;
+  }
+
+  .banner-rotating-text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .banner-text-rotation-container {
+    height: 27px;
+  }
+  .banner-content p {
+    font-size: 14px;
+    line-height: 16.7px;
+    max-width: 82vw;
+  }
+  .colored-text {
+    font-size: 14px;
+    line-height: 16.7px;
+    background-color: #B897E6;
+  }
+  .banner {
+    padding-top: 53px;
+    margin-bottom: 73px;
+  }
+  .banner-content button {
+    background-color: #B897E6;
+    color: white;
+    padding: 14px 41px 14px 42px;
+    font-size: 16px;
+    line-height: 19.54px;
+    margin-bottom: 49px;
+  }
+  .banner-desc-pc {
+    display: none;
+  }
+  .banner-desc-mobile {
+    display: inline-block;
+  }
+  .banner-desc-mobile a {
+    text-decoration: underline;
+    color: #B897E6;
+    margin-left: 5px;
+  }
 }

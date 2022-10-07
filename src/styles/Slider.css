@@ -230,11 +230,95 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin: 0px 10px;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-height: 690px) {
     .carousel {
         height: 500px;
     }
     .slider-section-heading {
         margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .swiper-slide {
+        width: 90vw;
+        height: 220px;
+    }
+    .slider-heading {
+        font-size: 16px;
+        max-width: 160px;
+        line-height: 19.5px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .slider-text {
+        font-size: 14px;
+        line-height: 16.5px;
+        max-width: 130px;
+        margin-bottom: 15px;
+        margin-left: 0px;
+    }
+    .slider-link button {
+        font-size: 12px;
+        line-height: 14.5px;
+        margin-left: 0px;
+        position: absolute;
+        bottom: 20px;
+    }
+    .slider-link button::before {
+        content: "";
+        position: absolute;
+        right: -12px;
+        top: 40%;
+        background-image: url('../images/links-arrow.svg');
+        background-size: 100%;
+        width: 6px;
+        height: 5px;
+        transition: 0.2s;
+    }
+    .slider-link button:hover::before {
+        right: -25px;
+    }
+    .slider-content {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        padding: 12px 0px 0px 14px;
+    }
+    .slider-image1 {
+        width: 50%;
+        height: 100%;
+    }
+    .slider-image2 {
+        width: 50%;
+        height: 100%;
+    }
+    .slider-image3 {
+        width: 50%;
+        height: 100%;
+    }
+    .slider-image4 {
+        width: 50%;
+        height: 100%;
+    }
+    .slider-image5 {
+        width: 50%;
+        height: 100%;
+    }
+    .slider-image6 {
+        width: 50%;
+        height: 100%;
+    }
+    .slider {
+        height: 335px;
+    }
+    .carousel {
+        height: fit-content;
+    }
+    .slider-section-heading {
+        margin-bottom: 0px;
+        font-size: 22px;
+        line-height: 26.8px;
+        margin: auto;
     }
 }
